@@ -67,7 +67,8 @@ jobs:
           add_candidate "${FTP_PATH#/}"
 
           echo "Probing FTP target directories (to avoid wrong --delete)."
-          FOUND_DIR=""
+          BEST_DIR=""
+          BEST_SCORE=0
           for d in "${CANDIDATES[@]}"; do
             echo "--- probe: ${d}"
             # probe listing; do NOT fail whole job on a bad candidate
@@ -86,25 +87,39 @@ jobs:
 EOF
             )" || continue
 
-            # Heuristic: правильная папка обычно содержит index.html и assets/
-            python3 - <<'PY' "$out" && FOUND_DIR="$d" && break
-import sys
-txt = sys.argv[1]
-lines = [l.strip() for l in txt.splitlines() if l.strip()]
-have_index = any(l == "index.html" for l in lines)
-have_assets = any(l.rstrip("/") == "assets" for l in lines)
-sys.exit(0 if (have_index and have_assets) else 1)
-PY
+            echo "$out"
+
+            have_index=0
+            have_assets=0
+            while IFS= read -r line; do
+              if [ "$line" = "index.html" ]; then have_index=1; fi
+              if [ "${line%/}" = "assets" ]; then have_assets=1; fi
+            done <<< "$out"
+
+            score=0
+            if [ "$have_index" -eq 1 ]; then score=1; fi
+            if [ "$have_index" -eq 1 ] && [ "$have_assets" -eq 1 ]; then score=2; fi
+
+            echo "probe score: ${score}"
+
+            if [ "${score}" -gt "${BEST_SCORE}" ]; then
+              BEST_SCORE="${score}"
+              BEST_DIR="${d}"
+            fi
+
+            if [ "${BEST_SCORE}" -ge 2 ]; then
+              break
+            fi
           done
 
-          if [ -z "${FOUND_DIR:-}" ]; then
-            echo "ERROR: Could not locate site root on FTP (no candidate contained both index.html and assets/)."
+          if [ "${BEST_SCORE}" -le 0 ] || [ -z "${BEST_DIR:-}" ]; then
+            echo "ERROR: Could not locate site root on FTP (no candidate contained index.html)."
             echo "Fix: set GitHub Secret FTP_PATH to the correct folder (e.g. '/', '.', 'www/davis.ru', or '/www/davis.ru') and re-run."
             exit 3
           fi
 
-          echo "Using FTP target dir: ${FOUND_DIR}"
-          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${FOUND_DIR}"
+          echo "Using FTP target dir: ${BEST_DIR} (score=${BEST_SCORE})"
+          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${BEST_DIR}"
 
           lftp -u "${FTP_USER}","${FTP_PASS}" -p "${PORT}" "${FTP_HOST}" <<EOF
           set ftp:ssl-allow no
@@ -114,7 +129,7 @@ PY
           set net:reconnect-interval-base 5
           set cmd:fail-exit yes
 
-          cd "${FOUND_DIR}"
+          cd "${BEST_DIR}"
           pwd
           ls
 
