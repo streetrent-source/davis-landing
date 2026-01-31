@@ -1,38 +1,28 @@
-# Авто-деплой на хостинг через GitHub Actions (SFTP)
+# Deploy (FTP) — REG.RU ISPmanager
 
-Цель: правки в Cursor → `git push` в `main` → сайт на хостинге обновился автоматически.
 
-## 1) Добавь Secrets в GitHub
+## Как это работает
+После `git push` в `main` запускается GitHub Actions workflow "Deploy to hosting (FTP)" и загружает файлы сайта по FTP в папку сайта на хостинге.
 
-Открой репозиторий на GitHub:
 
-`Settings` → `Secrets and variables` → `Actions` → `New repository secret`
+## Где добавить секреты
+GitHub → repo → Settings → Secrets and variables → Actions → New repository secret
 
-Создай 5 секретов:
 
-- `SFTP_HOST` — домен или IP хостинга (например `example.com` или `123.123.123.123`)
-- `SFTP_PORT` — порт SFTP (обычно `22`)
-- `SFTP_USER` — логин SFTP
-- `SFTP_PASS` — пароль SFTP
-- `SFTP_PATH` — папка сайта на хостинге (например `public_html`, `www`, `/domains/your-domain/public_html`)
+Добавить 5 секретов:
 
-Где взять значения: панель хостинга → доступы SFTP/FTP → «сервер/хост», «порт», «логин», «пароль», «корневая папка сайта».
 
-## 2) Убедись, что деплой идёт из ветки `main`
+- FTP_HOST = 37.140.192.199
+- FTP_PORT = 21
+- FTP_USER = u3372682
+- FTP_PASS = (пароль FTP-пользователя в ISPmanager)
+- FTP_PATH = /www/davis.ru
 
-Workflow настроен на триггер: **push в `main`**.
 
-Если у тебя основная ветка называется иначе — либо переименуй её в `main`, либо поменяй ветку в `.github/workflows/deploy.yml`.
+## Где взять пароль (FTP_PASS)
+ISPmanager → FTP-пользователи → выбрать пользователя u3372682 → Изменить пароль (задай новый и сохрани).
 
-## 3) Сделай push — и проверь Actions
 
-После `git push`:
-
-- GitHub → вкладка `Actions`
-- job `Deploy to hosting (SFTP)` должен быть зелёным
-- сайт на домене должен обновиться
-
-## Важные нюансы
-
-- `SFTP_PATH` критичен: деплой использует `mirror -R --delete`, поэтому **на сервере удаляются файлы, которых больше нет в репозитории**. Укажи путь **строго к папке сайта**, а не к корню аккаунта.
-- Репозиторий деплоится целиком (кроме `.git*` и `.github*`). Это значит, что на сервер уедут и `send.php`, и `assets/`, и `index.html`.
+## Проверка
+Сделай любой коммит и push в main → вкладка Actions → job должен быть зелёным.
+Если job красный — открой лог и скопируй последние 30–50 строк ошибки (без секретов).

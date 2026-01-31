@@ -1,49 +1,67 @@
-name: Deploy to hosting (SFTP)
+name: Deploy to hosting (FTP)
+
 
 on:
   push:
     branches: ["main"]
 
+
 concurrency:
-  group: deploy-main
+  group: deploy-ftp
   cancel-in-progress: true
+
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
 
+
       - name: Install lftp
         run: sudo apt-get update && sudo apt-get install -y lftp
 
-      - name: Deploy via SFTP (lftp mirror)
+
+      - name: Deploy via FTP (mirror + delete)
         env:
-          SFTP_HOST: ${{ secrets.SFTP_HOST }}
-          SFTP_PORT: ${{ secrets.SFTP_PORT }}
-          SFTP_USER: ${{ secrets.SFTP_USER }}
-          SFTP_PASS: ${{ secrets.SFTP_PASS }}
-          SFTP_PATH: ${{ secrets.SFTP_PATH }}
+          FTP_HOST: ${{ secrets.FTP_HOST }}
+          FTP_PORT: ${{ secrets.FTP_PORT }}
+          FTP_USER: ${{ secrets.FTP_USER }}
+          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_PATH: ${{ secrets.FTP_PATH }}
         run: |
           set -euo pipefail
 
-          if [ -z "${SFTP_PORT:-}" ]; then
-            SFTP_PORT="22"
+
+          if [ -z "${FTP_HOST:-}" ] || [ -z "${FTP_USER:-}" ] || [ -z "${FTP_PASS:-}" ] || [ -z "${FTP_PATH:-}" ]; then
+            echo "ERROR: Missing required secrets. Need: FTP_HOST, FTP_USER, FTP_PASS, FTP_PATH (FTP_PORT optional)."
+            exit 2
           fi
 
-          lftp -e "
-            set net:max-retries 2;
-            set net:timeout 20;
-            set sftp:auto-confirm yes;
-            set sftp:connect-program 'ssh -a -x -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p ${SFTP_PORT}';
-            open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST}:${SFTP_PORT};
-            mkdir -p '${SFTP_PATH}';
-            mirror -R --delete --verbose \
-              --exclude-glob .git* \
-              --exclude-glob .github* \
-              --exclude-glob .DS_Store \
-              ./ '${SFTP_PATH}';
-            bye;
-          "
+
+          PORT="${FTP_PORT:-21}"
+
+
+          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${FTP_PATH}"
+
+
+          lftp -u "${FTP_USER}","${FTP_PASS}" -p "${PORT}" "${FTP_HOST}" <<EOF
+          set ftp:ssl-allow no
+          set ftp:passive-mode on
+          set net:max-retries 2
+          set net:timeout 20
+          set net:reconnect-interval-base 5
+          set cmd:fail-exit yes
+
+
+          # upload from repo root to FTP_PATH
+          mirror -R --delete --verbose \
+            --exclude-glob .git* \
+            --exclude-glob .github* \
+            --exclude-glob README_DEPLOY.md \
+            ./ "${FTP_PATH}"
+
+
+          bye
+EOF
