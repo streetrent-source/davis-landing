@@ -41,11 +41,65 @@ jobs:
 
 
           PORT="${FTP_PORT:-21}"
-          TARGET_DIR="${FTP_PATH:-/}"
 
+          add_candidate () {
+            local v="${1:-}"
+            if [ -z "$v" ]; then return 0; fi
+            for x in "${CANDIDATES[@]:-}"; do
+              if [ "$x" = "$v" ]; then return 0; fi
+            done
+            CANDIDATES+=("$v")
+          }
 
-          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${TARGET_DIR}"
+          CANDIDATES=()
+          add_candidate "${FTP_PATH:-}"
+          add_candidate "${FTP_PATH#/}"
+          add_candidate "/www/davis.ru"
+          add_candidate "www/davis.ru"
+          add_candidate "/davis.ru"
+          add_candidate "davis.ru"
+          add_candidate "/"
+          add_candidate "."
 
+          echo "Probing FTP target directories (to avoid wrong --delete)."
+          FOUND_DIR=""
+          for d in "${CANDIDATES[@]}"; do
+            echo "--- probe: ${d}"
+            # probe listing; do NOT fail whole job on a bad candidate
+            out="$(
+              lftp -u "${FTP_USER}","${FTP_PASS}" -p "${PORT}" "${FTP_HOST}" <<EOF
+              set ftp:ssl-allow no
+              set ftp:passive-mode on
+              set net:max-retries 2
+              set net:timeout 20
+              set net:reconnect-interval-base 5
+              set cmd:fail-exit yes
+              cd "${d}"
+              pwd
+              cls -1
+              bye
+EOF
+            )" || continue
+
+            # Heuristic: правильная папка обычно содержит index.html и assets/
+            python3 - <<'PY' "$out" && FOUND_DIR="$d" && break
+import sys
+txt = sys.argv[1]
+lines = [l.strip() for l in txt.splitlines() if l.strip()]
+have_index = any(l == "index.html" for l in lines)
+have_assets = any(l.rstrip("/") == "assets" for l in lines)
+sys.exit(0 if (have_index and have_assets) else 1)
+PY
+          done
+
+          if [ -z "${FOUND_DIR:-}" ]; then
+            echo "ERROR: Could not locate site root on FTP (no candidate contained both index.html and assets/)."
+            echo "Fix: set GitHub Secret FTP_PATH to the correct folder (e.g. '/', '.', 'www/davis.ru', or '/www/davis.ru') and re-run."
+            exit 3
+          fi
+
+          echo "Using FTP target dir: ${FOUND_DIR}"
+          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${FOUND_DIR}"
 
           lftp -u "${FTP_USER}","${FTP_PASS}" -p "${PORT}" "${FTP_HOST}" <<EOF
           set ftp:ssl-allow no
@@ -55,19 +109,15 @@ jobs:
           set net:reconnect-interval-base 5
           set cmd:fail-exit yes
 
-
-          # debug: show where we are on FTP
-          cd "${TARGET_DIR}"
+          cd "${FOUND_DIR}"
           pwd
           ls
 
-          # upload from repo root to TARGET_DIR
           mirror -R --delete --verbose \
             --exclude-glob .git* \
             --exclude-glob .github* \
             --exclude-glob README_DEPLOY.md \
             ./ .
-
 
           bye
 EOF
