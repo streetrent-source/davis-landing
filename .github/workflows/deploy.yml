@@ -52,14 +52,19 @@ jobs:
           }
 
           CANDIDATES=()
+          # Prefer FTP root first (common on ISPmanager chroot accounts)
+          add_candidate "."
+          add_candidate "/"
+
+          # Common site-root patterns
+          add_candidate "www/davis.ru"
+          add_candidate "/www/davis.ru"
+          add_candidate "davis.ru"
+          add_candidate "/davis.ru"
+
+          # User-provided path last (can point to nested folder on chrooted FTP)
           add_candidate "${FTP_PATH:-}"
           add_candidate "${FTP_PATH#/}"
-          add_candidate "/www/davis.ru"
-          add_candidate "www/davis.ru"
-          add_candidate "/davis.ru"
-          add_candidate "davis.ru"
-          add_candidate "/"
-          add_candidate "."
 
           echo "Probing FTP target directories (to avoid wrong --delete)."
           FOUND_DIR=""
