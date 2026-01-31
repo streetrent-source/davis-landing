@@ -102,16 +102,15 @@ body {
     opacity: 0.92;
     font-weight: 400;
     color: #333;
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-/* Разрешаем переносы для заголовка */
+/* Разрешаем переносы для заголовка (и подзаголовка тоже) */
 @media (min-width: 901px){
   .hero-title{
     white-space: normal;
-  }
-  .hero-subtitle{
-    white-space: nowrap;
-    overflow: visible;
   }
 }
 
