@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Агентство коммерческой недвижимости | Москва</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="scroll-progress" aria-hidden="true"></div>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header-inner">
+        <a class="brand" href="#top">DAVIS</a>
+
+        <button class="nav-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+
+        <nav class="nav">
+          <a href="#about">КТО МЫ</a>
+          <a href="#services">УСЛУГИ</a>
+          <a href="#approach">КАК МЫ РАБОТАЕМ</a>
+          <a href="#why">ПОЧЕМУ DAVIS</a>
+          <a href="#forwhom">КОМУ ПОДХОДИМ</a>
+          <a href="#contact-form" class="nav-cta">ЗАЯВКА</a>
+        </nav>
+      </div>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+      <a href="#about">КТО МЫ</a>
+      <a href="#services">УСЛУГИ</a>
+      <a href="#approach">КАК МЫ РАБОТАЕМ</a>
+      <a href="#why">ПОЧЕМУ DAVIS</a>
+      <a href="#forwhom">КОМУ ПОДХОДИМ</a>
+      <a href="#contact-form" class="mobile-nav-cta">ЗАЯВКА</a>
+    </div>
+
+    <div class="backdrop" aria-hidden="true"></div>
+
+    <!-- Hero-блок -->
+    <section class="hero hero-parallax-bg" id="top">
+      <div class="container hero-inner">
+        <div class="hero-card hero-parallax-card">
+          <h1 class="hero-title">Коммерческая недвижимость в Москве — подбор помещений под ваш бизнес</h1>
+          <p class="hero-subtitle">Street retail в Москве: анализ условий сделки, переговоры по цене и сопровождение до подписания</p>
+
+          <div class="hero-features hero-features-2x2">
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Актуальные объекты</span>
+            </div>
+
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Документы и условия</span>
+            </div>
+
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Экономия времени</span>
+            </div>
+
+            <div class="feature-item">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              <span>Подбор под задачу</span>
+            </div>
+          </div>
+
+          <button class="cta-button" onclick="scrollToForm()">ПОЛУЧИТЬ ПОДБОРКУ</button>
+          <p class="hero-note">Короткий созвон — и подборка под вашу задачу</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Блок "Проблемы рынка" -->
+    <section class="problems reveal" id="problems">
+        <div class="container">
+            <h2 class="section-title">Почему самостоятельно найти коммерческое помещение в Москве — сложно</h2>
+            <p class="section-text">
+                Сложность не только в количестве вариантов. Основные риски — в правовых аспектах, условиях договора и переговорах по цене.
+            </p>
+
+            <div class="problems-layout">
+                <!-- ЛЕВАЯ: список пунктов -->
+                <div class="problems-left reveal text-reveal">
+                    <div class="problems-list reveal-stagger">
+                        <div class="problem-item">
+                            <p>Неочевидные правовые ограничения и нюансы по объекту</p>
+                        </div>
+
+                        <div class="problem-item">
+                            <p>Разные форматы собственности и условия, влияющие на сделку</p>
+                        </div>
+
+                        <div class="problem-item">
+                            <p>Завышенные стартовые ставки и отсутствие понимания реальной цены</p>
+                        </div>
+
+                        <div class="problem-item">
+                            <p>Сложности в переговорах по условиям, срокам и коммерческим параметрам</p>
+                        </div>
+
+                        <div class="problem-item">
+                            <p>Риски принять решение без полной проверки документов и условий сделки</p>
+                        </div>
+                    </div>
+
+                    <p class="accent-text">
+                        Коммерческое помещение — это правовые аспекты, цена и условия сделки. Экспертиза здесь критически важна.
+                    </p>
+                </div>
+
+                <!-- ПРАВАЯ: место под фото -->
+                <div class="problems-media sticky-media media-parallax reveal media-reveal" aria-label="Иллюстрация: поиск помещения и переговоры"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Кто мы" -->
+    <section class="about reveal" id="about">
+        <div class="container">
+            <h2 class="section-title">Кто мы</h2>
+
+            <div class="about-layout">
+                <!-- СЛЕВА: фото команды (добавим позже) -->
+                <div class="about-media sticky-media media-parallax reveal media-reveal" aria-label="Команда DAVIS"></div>
+
+                <!-- СПРАВА: текст -->
+                <div class="about-right reveal text-reveal">
+                    <div class="about-text">
+                        <p>
+                            DAVIS — команда экспертов по торговой недвижимости в формате street retail в Москве.
+                            Мы работаем с арендаторами, инвесторами и собственниками и сопровождаем сделки от задачи до подписания.
+                        </p>
+
+                        <p>
+                            За плечами каждого специалиста — десятки проведённых сделок.
+                            Мы глубоко понимаем локации, трафик, экономику помещений и переговорный процесс — поэтому предлагаем решения,
+                            которые работают в реальности.
+                        </p>
+                    </div>
+
+                    <div class="about-facts">
+                        <div class="about-fact">
+                            <strong>30+ лет</strong>
+                            <span>опыт команды</span>
+                        </div>
+
+                        <div class="about-fact">
+                            <strong>Street retail</strong>
+                            <span>фокус</span>
+                        </div>
+
+                        <div class="about-fact">
+                            <strong>Москва</strong>
+                            <span>рынок</span>
+                        </div>
+
+                        <div class="about-fact">
+                            <strong>Сделки</strong>
+                            <span>от подбора до подписания</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Наш подход" -->
+    <section class="approach reveal" id="approach">
+        <div class="container">
+            <h2 class="section-title">Как мы работаем</h2>
+
+            <div class="approach-layout">
+                <!-- Левая колонка: шаги -->
+                <div class="steps steps-vertical reveal-stagger">
+                    <div class="step">
+                        <h3>Анализ задачи</h3>
+                        <p>Формат, локация, бюджет, сроки, требования бизнеса.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Подбор вариантов</h3>
+                        <p>Подбираем предложения под вашу задачу и сценарий использования.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Согласование условий</h3>
+                        <p>Переговоры по ставке, срокам, ремонту, обеспечению и условиям договора.</p>
+                    </div>
+
+                    <div class="step">
+                        <h3>Сопровождение сделки</h3>
+                        <p>Контроль этапов до подписания и передачи помещения.</p>
+                    </div>
+                </div>
+
+                <!-- Правая колонка: изображение -->
+                <div class="approach-media sticky-media media-parallax reveal media-reveal" aria-label="Переговоры брокера с клиентом"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Услуги" -->
+    <section class="services reveal" id="services">
+        <div class="container">
+            <h2 class="section-title">Наши услуги</h2>
+
+            <div class="services-layout">
+                <!-- СЛЕВА: место под фото (позже добавим) -->
+                <div class="services-media sticky-media media-parallax reveal media-reveal" aria-label="Иллюстрация услуг DAVIS"></div>
+
+                <!-- СПРАВА: вертикальный список -->
+                <div class="services-list reveal-stagger">
+                    <div class="service-row">
+                        <h3>Аренда street retail</h3>
+                        <p>Подбор торговых помещений на первых линиях под формат бизнеса, локацию и трафик.</p>
+                    </div>
+
+                    <div class="service-row">
+                        <h3>Покупка и продажа street retail</h3>
+                        <p>Подбор и сопровождение сделок купли-продажи торговых помещений на первых линиях.</p>
+                    </div>
+
+                    <div class="service-row">
+                        <h3>Сдача и продажа объектов собственников</h3>
+                        <p>Поиск арендатора или покупателя, переговоры и сопровождение до подписания.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Почему мы" -->
+    <section class="why-us reveal" id="why">
+        <div class="container">
+            <h2 class="section-title">Почему клиенты работают с DAVIS</h2>
+
+            <div class="why-layout">
+                <!-- СЛЕВА: список -->
+                <div class="why-left reveal text-reveal">
+                    <div class="why-list reveal-stagger">
+                        <div class="why-item">
+                            <h3>Фокус на street retail</h3>
+                            <p>Работаем с торговыми помещениями на первых линиях Москвы.</p>
+                        </div>
+
+                        <div class="why-item">
+                            <h3>Документы и условия</h3>
+                            <p>Сверяем ключевые условия и документы до принятия решения.</p>
+                        </div>
+
+                        <div class="why-item">
+                            <h3>Подбор под задачу бизнеса</h3>
+                            <p>Локация, трафик, вход, витрины и формат — под ваш сценарий.</p>
+                        </div>
+
+                        <div class="why-item">
+                            <h3>Сопровождение до подписания</h3>
+                            <p>Переговоры, согласования и контроль этапов сделки.</p>
+                        </div>
+                    </div>
+
+                    <p class="accent-text">Результат — понятный выбор и уверенное решение по объекту.</p>
+                </div>
+
+                <!-- СПРАВА: фото позже -->
+                <div class="why-media sticky-media media-parallax reveal media-reveal" aria-label="Иллюстрация: переговоры и подписание"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Блок "Для кого" -->
+    <section class="for-whom reveal" id="forwhom">
+        <div class="container">
+            <h2 class="section-title">Кому мы подходим</h2>
+
+            <div class="who-layout">
+                <!-- СЛЕВА: фото -->
+                <div class="who-media sticky-media media-parallax reveal media-reveal" aria-label="Иллюстрация: street retail в Москве"></div>
+
+                <!-- СПРАВА: текст -->
+                <div class="who-left reveal text-reveal">
+                    <div class="who-list reveal-stagger">
+                        <div class="who-item">
+                            <h3>Ритейлу и общепиту</h3>
+                            <p>Открытие и развитие точек в формате street retail.</p>
+                        </div>
+
+                        <div class="who-item">
+                            <h3>Бизнесу с конкретной задачей</h3>
+                            <p>Когда важно подобрать помещение под экономику, условия и сценарий работы бизнеса.</p>
+                        </div>
+
+                        <div class="who-item">
+                            <h3>Инвесторам</h3>
+                            <p>Подбор объектов с понятной экономикой и ликвидностью.</p>
+                        </div>
+
+                        <div class="who-item">
+                            <h3>Собственникам</h3>
+                            <p>Сдача или продажа объекта с переговорами и сопровождением.</p>
+                        </div>
+                    </div>
+
+                    <p class="accent-text">
+                        Если вы ищете помещение под конкретную задачу бизнеса — мы подберём решение.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Финальный CTA -->
+    <section class="final-cta" id="contact-form">
+        <div class="container">
+            <h2 class="section-title">Нужны проверенные коммерческие помещения в Москве?</h2>
+            <p class="section-text">Оставьте заявку — мы уточним задачу и подготовим подборку<br>актуальных и проверенных объектов под ваши цели.</p>
+            
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Ваше имя" required>
+                </div>
+                <div class="form-group">
+                    <input type="tel" id="phone" name="phone" placeholder="Телефон" required>
+                </div>
+                <div class="form-group">
+                    <textarea id="message" name="message" placeholder="Опишите задачу (необязательно)" rows="4"></textarea>
+                </div>
+                <button type="submit" class="cta-button">Получить подборку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DAVIS</h3>
+                    <p>Street retail • Москва</p>
+                </div>
+                <div class="footer-contacts">
+                    <h4>Контакты</h4>
+                    <p>Телефон: <a href="tel:+79999999999">+7 (999) 999-99-99</a></p>
+                    <p>Email: <a href="mailto:info@example.com">info@example.com</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DAVIS. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <a class="sticky-cta" href="#contact-form" aria-label="Оставить заявку">
+      ОСТАВИТЬ ЗАЯВКУ
+    </a>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,1733 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #c4161c;
+    --card-bg: rgba(0,0,0,0.035);
+    --graphite: rgba(22,22,22,0.82);
+    --line: rgba(255,255,255,0.10);
+    --text-dark: #1F2937;
+    --text-gray: #6B7280;
+    --bg-light: #F9FAFB;
+    --bg-white: #FFFFFF;
+    --border-color: #E5E7EB;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: var(--text-dark);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Hero-блок */
+.hero {
+    position: relative;
+    min-height: 86vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    color: #111;
+    text-align: center;
+}
+
+/* Слой с картинкой */
+.hero::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-image: url("../img/hero-davis.png");
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1.35) contrast(0.92);
+    transform: scale(1.02) translateY(var(--bg-shift, 0)); /* чтобы не было белых краёв от фильтра */
+}
+
+/* Мягкое затемнение для читаемости текста (не "траур") */
+.hero::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        rgba(255,255,255,0.06),
+        rgba(0,0,0,0.14)
+    );
+}
+
+.hero-inner,
+.hero-card {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-inner {
+    width: 100%;
+}
+
+/* карточка текста */
+.hero-card {
+    max-width: 1100px;
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 18px;
+    background: rgba(245,245,245,0.72);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(0,0,0,0.06);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+}
+
+.hero-title {
+    font-size: clamp(30px, 3.2vw, 52px);
+    line-height: 1.08;
+    margin-bottom: 14px;
+    font-weight: 800;
+    color: #111;
+}
+
+.hero-subtitle {
+    font-size: clamp(18px, 1.6vw, 24px);
+    line-height: 1.25;
+    margin-bottom: 22px;
+    opacity: 0.92;
+    font-weight: 400;
+    color: #333;
+}
+
+/* Разрешаем переносы для заголовка */
+@media (min-width: 901px){
+  .hero-title{
+    white-space: normal;
+  }
+  .hero-subtitle{
+    white-space: nowrap;
+    overflow: visible;
+  }
+}
+
+/* На мобилке разрешаем переносы */
+@media (max-width: 900px){
+  .hero-title, .hero-subtitle{
+    white-space: normal;
+  }
+}
+
+.hero-features {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 18px;
+    margin-bottom: 48px;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media (min-width: 900px) {
+    .hero-features {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+}
+
+/* HERO features 2x2 */
+.hero-features-2x2{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 14px 24px;
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 18px 18px;
+    border-radius: 14px;
+    background: rgba(0,0,0,0.06);
+    backdrop-filter: blur(10px);
+    text-align: left;
+}
+
+.feature-item svg {
+    flex-shrink: 0;
+    color: var(--red);
+}
+
+.feature-item span {
+    font-weight: 800;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    /* увеличили */
+    font-size: clamp(13px, 1.2vw, 16px);
+    color: #111;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 16px 22px;
+    border-radius: 14px;
+    border: 2px solid var(--red);
+    background: var(--red);
+    color: #fff;
+    font-weight: 900;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: transform .12s ease, box-shadow .12s ease, background .12s ease;
+    box-shadow: 0 10px 26px rgba(196,22,28,0.35);
+    margin-bottom: 16px;
+    font-size: 16px;
+}
+
+.cta-button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 14px 34px rgba(196,22,28,0.42);
+}
+
+.cta-button:active {
+    transform: translateY(0);
+}
+
+.hero-note {
+    font-size: 14px;
+    color: #555;
+    margin-top: 8px;
+}
+
+/* Блок "Проблемы рынка" */
+.problems {
+    background: var(--bg-white);
+}
+
+/* единые отступы секций */
+section{
+  padding: 88px 0;
+  scroll-margin-top: 90px;
+}
+
+/* заголовки секций — крупнее и ровнее */
+/* Название раздела */
+.section-title {
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 800;
+    line-height: 1.2;
+    margin: 0 0 16px 0;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin: 0 0 26px 0;
+    opacity: 0.92;
+    color: var(--text-gray);
+    text-align: center;
+}
+
+.problems-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 */
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.problems-left{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.problems-list{
+  display: grid;
+  gap: 12px;
+}
+
+.problem-item{
+  position: relative;
+  padding: 16px 18px 16px 20px;
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+
+.problem-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  background: var(--red);
+  border-radius: 3px;
+}
+
+.problem-item p{
+  margin: 0;
+  opacity: 0.9;
+}
+
+.accent-text{
+  margin-top: 14px;
+  padding: 16px 18px 16px 20px;
+  border-radius: 14px;
+  background: var(--card-bg); /* тот же серый, что и везде */
+  color: inherit;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 600;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.problems-media{
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--card-bg);
+  min-height: 420px; /* чтобы не было пустоты */
+  background-image: url("../img/moscow-map-search-bw.jpg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.problem-icon {
+    font-size: 20px;
+    flex-shrink: 0;
+    font-weight: 600;
+    color: var(--text-gray);
+}
+
+.problem-item p {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+    line-height: 1.6;
+}
+
+
+/* Блок "Наш подход" */
+.approach {
+    background: var(--bg-light);
+}
+
+.approach-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* 50/50 как в problems-layout */
+  gap: 28px;
+  align-items: stretch;   /* главное: одинаковая высота */
+}
+
+.steps-vertical{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  height: 100%;
+}
+
+/* Шаги: оставляем твой стиль, но без лишних верх/низ отступов */
+.steps-vertical .step{
+  padding: 18px 18px 18px 20px;
+  border-radius: 14px;
+  background: var(--card-bg);
+  position: relative;
+  text-align: left;
+  box-shadow: none;
+  transition: none;
+  margin: 0;              /* важно, если где-то есть margin */
+}
+
+
+.steps-vertical .step:hover{
+  transform: none;
+  box-shadow: none;
+}
+
+/* тонкий красный акцент слева у каждого шага */
+.steps-vertical .step::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  background: var(--red);
+  border-radius: 3px;
+  opacity: 0.9;
+}
+
+/* Заголовки шагов — как section-title (крупно и жирно) */
+.steps-vertical .step h3{
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+/* Подтекст — меньше и не жирный */
+.steps-vertical .step p{
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 400;
+  line-height: 1.55;
+  opacity: 0.9;
+  max-width: 52ch;
+  color: var(--text-gray);
+}
+
+.approach-media{
+  border-radius: 18px;
+  overflow: hidden;
+
+  /* ВАЖНО: фон вместо <img> */
+  background-image: url("../img/approach-meeting-bw-red.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* чтобы не схлопывалось, если слева мало контента */
+  min-height: 420px; /* как в problems-media */
+}
+
+/* мобильная версия */
+@media (max-width: 900px){
+  .approach-layout{
+    grid-template-columns: 1fr;
+  }
+  .approach-media{
+    min-height: 240px;
+  }
+  .services-layout{
+    grid-template-columns: 1fr;
+  }
+  .services-media{
+    min-height: 240px;
+  }
+  .problems-layout{
+    grid-template-columns: 1fr;
+  }
+  .problems-media{
+    min-height: 240px;
+  }
+  .why-layout{
+    grid-template-columns: 1fr;
+  }
+  .why-media{
+    min-height: 240px;
+  }
+  .who-layout{
+    grid-template-columns: 1fr;
+  }
+  .who-media{
+    min-height: 240px;
+  }
+  .about-layout{
+    grid-template-columns: 1fr;
+  }
+  .about-media{
+    min-height: 240px;
+  }
+  .about-facts{
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ABOUT (Кто мы) — фото слева, текст справа */
+.about{
+  background: var(--bg-white);
+}
+
+.about-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.about-media{
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.04);
+  min-height: 420px;
+  background-image: url("../img/about-davis-team-bw-red.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.about-right{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.about-text{
+  padding: 18px 18px 18px 20px;
+  border-radius: 14px;
+  background: var(--card-bg, rgba(0,0,0,0.035));
+  text-align: left;
+}
+
+.about-text p{
+  margin: 0 0 12px 0;
+  font-size: clamp(16px, 1.3vw, 18px);
+  line-height: 1.55;
+  color: var(--text-gray);
+}
+.about-text p:last-child{
+  margin-bottom: 0;
+}
+
+.about-facts{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+
+.about-fact{
+  padding: 16px 18px;
+  border-radius: 14px;
+  background: var(--card-bg, rgba(0,0,0,0.035));
+}
+
+.about-fact strong{
+  display: block;
+  font-size: 20px;
+  font-weight: 900;
+  color: var(--text-dark);
+  letter-spacing: 0.02em;
+}
+
+.about-fact span{
+  display: block;
+  margin-top: 6px;
+  font-size: 14px;
+  color: var(--text-gray);
+}
+
+
+.step {
+    text-align: center;
+    padding: 32px 24px;
+    background: var(--bg-white);
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.step:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+/* Блок "Услуги" */
+.services {
+    background: var(--bg-white);
+    position: relative;
+}
+
+/* тончайшая линия сверху секции */
+.services::before{
+  content:"";
+  position:absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 1px;
+  background: rgba(209,31,42,0.22);
+}
+
+/* микро-точка у заголовка */
+.services .section-title{
+  position: relative;
+  display: inline-block;
+}
+
+
+/* SERVICES LAYOUT: сетка услуг + "полоса слева" как в "как мы работаем" */
+.services-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* слева фото, справа список */
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+/* слева блок под фото (пока пустой) */
+.services-media{
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--card-bg);
+  min-height: 420px; /* чтобы не было пустоты */
+  background-image: url("../img/services-meeting-bw-red.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* справа список услуг */
+.services-list{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.service-row{
+  position: relative;
+  padding: 18px 18px 18px 20px;
+  border-radius: 14px;
+  background: var(--card-bg);
+}
+
+/* ВАЖНО: если ты хочешь красную полосу как в "как мы работаем" — оставляем */
+.service-row::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top: 14px;
+  bottom: 14px;
+  width: 3px;
+  background: var(--red);
+  border-radius: 3px;
+}
+
+/* Заголовки услуг — крупные и жирные, как section-title (ты это просил ранее для шагов) */
+.service-row h3{
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+/* Описание — меньше и не жирное */
+.service-row p{
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 400;
+  line-height: 1.55;
+  opacity: 0.9;
+  max-width: 52ch;
+}
+
+/* Блок "Почему мы" */
+.why-us {
+    background: var(--bg-light);
+}
+
+.advantages {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    margin-bottom: 48px;
+}
+
+.advantage-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 20px;
+    background: var(--bg-white);
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.advantage-item svg {
+    flex-shrink: 0;
+    color: var(--red);
+}
+
+.advantage-item span {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--text-dark);
+}
+
+.accent-quote {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--text-dark);
+    padding: 32px;
+    background: var(--bg-white);
+    border-radius: 16px;
+    max-width: 700px;
+    margin: 0 auto;
+    border-left: 4px solid var(--red);
+}
+
+/* Блок "Для кого" */
+.for-whom {
+    background: var(--bg-white);
+}
+
+/* WHO 50/50 */
+.who-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.who-left{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.who-list{
+  display: grid;
+  gap: 12px;
+}
+
+.who-item{
+  position: relative;
+  padding: 16px 18px 16px 20px;
+  border-radius: 14px;
+  background: var(--card-bg, rgba(0,0,0,0.035));
+}
+
+.who-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:14px;
+  bottom:14px;
+  width:3px;
+  background: var(--red);
+  border-radius:3px;
+}
+
+.who-item h3{
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+.who-item p{
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-gray);
+  opacity: 0.95;
+}
+
+.who-media{
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.04);
+  min-height: 420px;
+  background-image: url("../img/who-street-retail-checklist-bw-red.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* FINAL CTA — в общем стиле сайта */
+.final-cta{
+  background: var(--bg-white);
+  color: var(--text-dark);
+}
+
+.final-cta .section-title,
+.final-cta .section-text{
+  color: inherit;
+}
+
+.contact-form{
+  max-width: 820px;
+  margin: 28px auto 0;
+  padding: 22px 22px 22px 24px;
+  border-radius: 18px;
+  background: var(--card-bg, rgba(0,0,0,0.035));
+  position: relative;
+}
+
+.contact-form::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:18px;
+  bottom:18px;
+  width:3px;
+  background: var(--red);
+  border-radius:3px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 16px 20px;
+    font-size: 16px;
+    border: 1px solid rgba(0,0,0,0.12);
+    border-radius: 12px;
+    background: rgba(255,255,255,0.65);
+    color: var(--text-dark);
+    font-family: inherit;
+    transition: all 0.3s ease;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: rgba(31,41,55,0.55);
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: rgba(196,22,28,0.55);
+    background: rgba(255,255,255,0.85);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.contact-form .cta-button {
+    width: 100%;
+    margin-top: 8px;
+}
+
+/* Подвал */
+.footer {
+    background: #111827;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 60px 0 30px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+.footer-info h3 {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    margin-bottom: 12px;
+}
+
+.footer-info p {
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contacts h4 {
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    margin-bottom: 16px;
+}
+
+.footer-contacts p {
+    font-size: 16px;
+    margin-bottom: 8px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.footer-contacts a {
+    color: var(--red);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-contacts a:hover {
+    color: var(--primary-dark);
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 30px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-bottom p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 32px;
+    }
+
+    .hero-subtitle {
+        font-size: 18px;
+    }
+
+    .hero-features {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .section-title {
+        font-size: 32px;
+    }
+
+    .step-body h3 {
+        font-size: 26px;
+    }
+
+    .section-text {
+        font-size: 16px;
+    }
+
+    .steps,
+
+    .problems-list {
+        grid-template-columns: 1fr;
+    }
+
+    .advantages {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 28px;
+    }
+
+    .hero-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+
+    .step-body h3 {
+        font-size: 22px;
+    }
+
+    .cta-button {
+        padding: 16px 32px;
+        font-size: 16px;
+    }
+}
+
+/* ===== HEADER ===== */
+
+/* HEADER */
+.header{
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: transparent;
+  backdrop-filter: none;
+  border: none;
+  position: relative;
+}
+
+.header-inner{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+  position: relative;
+  z-index: 1;
+}
+
+.brand{
+  font-weight: 900;
+  font-size: clamp(32px, 3.6vw, 54px);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+
+  color: #000000;   /* просто чёрный */
+
+  line-height: 1;
+  white-space: nowrap;
+  text-decoration: none;
+}
+
+.nav{
+  display:flex;
+  gap: 22px;
+  align-items:center;
+  white-space: nowrap; /* всё в одну строку */
+}
+
+.nav a{
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #000000;   /* чёрный */
+
+  text-decoration: none;
+  white-space: nowrap;
+  opacity: 0.9;
+  transition: opacity 0.3s ease;
+}
+
+.nav a:hover{
+  opacity: 1;
+}
+
+.nav-cta{
+  padding: 12px 16px;
+  border: 1px solid rgba(0,0,0,0.35);
+  border-radius: 12px;
+  color: #000;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  background: transparent;
+  transition: opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.nav-cta:hover{
+  opacity: 1;
+}
+
+/* ===== SCROLL FIX ===== */
+
+
+/* WHY 50/50 */
+.why-layout{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+  align-items: stretch;
+  margin-top: 18px;
+}
+
+.why-left{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.why-list{
+  display: grid;
+  gap: 12px;
+}
+
+.why-item{
+  position: relative;
+  padding: 16px 18px 16px 20px;
+  border-radius: 14px;
+  background: var(--card-bg, rgba(0,0,0,0.035));
+}
+
+.why-item::before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:14px;
+  bottom:14px;
+  width:3px;
+  background: var(--red);
+  border-radius:3px;
+}
+
+.why-item h3{
+  margin: 0 0 10px 0;
+  font-size: clamp(22px, 2.2vw, 30px);
+  font-weight: 800;
+  line-height: 1.2;
+  color: var(--text-dark);
+}
+
+.why-item p{
+  margin: 0;
+  font-size: clamp(16px, 1.3vw, 18px);
+  font-weight: 400;
+  line-height: 1.55;
+  color: var(--text-gray);
+  opacity: 0.95;
+}
+
+.why-media{
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(0,0,0,0.04);
+  min-height: 420px;
+  background-image: url("../img/why-davis-street-retail-bw-red.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* MOBILE */
+@media (max-width: 900px){
+  .brand{
+    font-size: 38px;
+    letter-spacing: 0.18em;
+  }
+
+
+  section{
+    padding: 64px 0;
+  }
+
+  .hero{
+    min-height: 78vh;
+  }
+
+  .hero-card{
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  .cta-button{
+    width: 100%;
+  }
+}
+
+/* =========================
+   PREMIUM EFFECTS PACK
+   ========================= */
+
+/* 1) Мягкая "тактильность" карточек (без прыжков) */
+.problem-item,
+.steps-vertical .step,
+.service-row,
+.why-item,
+.who-item,
+.about-text,
+.about-fact{
+  transition: box-shadow .22s ease, background-color .22s ease;
+}
+
+.problem-item:hover,
+.steps-vertical .step:hover,
+.service-row:hover,
+.why-item:hover,
+.who-item:hover,
+.about-text:hover,
+.about-fact:hover{
+  box-shadow: 0 10px 26px rgba(0,0,0,0.08);
+}
+
+/* 2) Анимация красной полосы слева (очень тонко) */
+.problem-item::before,
+.steps-vertical .step::before,
+.service-row::before,
+.why-item::before,
+.who-item::before{
+  transition: top .22s ease, bottom .22s ease, opacity .22s ease;
+}
+
+.problem-item:hover::before,
+.steps-vertical .step:hover::before,
+.service-row:hover::before,
+.why-item:hover::before,
+.who-item:hover::before{
+  top: 10px;
+  bottom: 10px;
+  opacity: 1;
+}
+
+/* 3) Reveal анимации (если у тебя уже есть — можно пропустить этот блок) */
+.reveal{
+  opacity: 0;
+  transform: translateY(14px);
+  transition: opacity .55s ease, transform .55s ease;
+  will-change: opacity, transform;
+}
+.reveal.is-visible{
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-stagger > *{
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity .55s ease, transform .55s ease;
+}
+.reveal-stagger.is-visible > *{
+  opacity: 1;
+  transform: translateY(0);
+}
+.reveal-stagger.is-visible > *:nth-child(1){ transition-delay: 0.00s; }
+.reveal-stagger.is-visible > *:nth-child(2){ transition-delay: 0.06s; }
+.reveal-stagger.is-visible > *:nth-child(3){ transition-delay: 0.12s; }
+.reveal-stagger.is-visible > *:nth-child(4){ transition-delay: 0.18s; }
+.reveal-stagger.is-visible > *:nth-child(5){ transition-delay: 0.24s; }
+.reveal-stagger.is-visible > *:nth-child(6){ transition-delay: 0.30s; }
+
+/* 4) "Фото → текст" с разной задержкой (режиссура) */
+.media-reveal{
+  transition-delay: 0s !important;
+}
+.text-reveal{
+  transition-delay: .08s !important;
+}
+
+/* 5) Sticky фото в блоках 50/50 (дорого) */
+@media (min-width: 901px){
+  .sticky-media{
+    position: sticky;
+    top: 110px; /* под шапку */
+    align-self: start;
+  }
+}
+
+/* 6) Лёгкий параллакс-эффект только на десктопе */
+@media (min-width: 901px){
+  .media-parallax{
+    background-attachment: fixed;
+  }
+}
+
+/* 7) Уважение к настройке "уменьшить анимации" */
+@media (prefers-reduced-motion: reduce){
+  .reveal, .reveal-stagger > *{
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+  .media-parallax{
+    background-attachment: scroll !important;
+  }
+}
+
+/* ===== Scroll progress line ===== */
+.scroll-progress{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 0%;
+  background: var(--red);
+  z-index: 9999;
+  opacity: 0.9;
+  transform-origin: left center;
+  transition: width .08s linear;
+  pointer-events: none;
+}
+
+/* На мобильном можно чуть тоньше */
+@media (max-width: 900px){
+  .scroll-progress{
+    height: 2px;
+  }
+}
+
+/* =========================
+   HERO LAYERED PARALLAX
+   ========================= */
+
+/* подготовка слоёв */
+.hero{
+  overflow: hidden;
+}
+
+.hero::before{
+  will-change: transform;
+}
+
+.hero-card{
+  will-change: transform;
+}
+
+/* эффект только на десктопе */
+@media (min-width: 901px){
+  .hero-parallax-bg{
+    transform: translateY(0);
+  }
+
+  .hero-parallax-card{
+    transform: translateY(0);
+  }
+}
+
+/* уважение к системным настройкам */
+@media (prefers-reduced-motion: reduce){
+  .hero::before,
+  .hero-card{
+    transform: none !important;
+  }
+}
+
+/* ===== Mobile nav ===== */
+.nav-toggle{
+  display:none;
+  width:44px;
+  height:44px;
+  border:1px solid rgba(0,0,0,0.18);
+  border-radius:12px;
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  align-items:center;
+  justify-content:center;
+  gap:5px;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.nav-toggle span{
+  display:block;
+  width:18px;
+  height:2px;
+  background:#111;
+  border-radius:2px;
+}
+
+.mobile-nav{
+  display:none;
+  position: fixed;
+  left: 16px;
+  right: 16px;
+  top: 70px;
+  z-index: 9998;
+  border-radius: 16px;
+  background: rgba(245,245,245,0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(0,0,0,0.10);
+  padding: 14px;
+  box-shadow: 0 18px 50px rgba(0,0,0,0.16);
+}
+
+.mobile-nav a{
+  display:block;
+  padding: 12px 12px;
+  border-radius: 12px;
+  text-decoration:none;
+  color:#111;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.mobile-nav a:hover{
+  background: rgba(0,0,0,0.04);
+}
+
+.mobile-nav-cta{
+  margin-top: 6px;
+  background: rgba(196,22,28,0.10);
+  border: 1px solid rgba(196,22,28,0.35);
+}
+
+/* показываем бургер и скрываем десктоп-меню */
+@media (max-width: 900px){
+  .nav{ display:none; }
+  .nav-toggle{ display:flex; }
+  .mobile-nav.is-open{ display:block; }
+}
+
+@media (max-width: 900px){
+  .hero{
+    min-height: 74vh;
+    padding-top: 18px;
+    padding-bottom: 18px;
+  }
+
+  .hero-card{
+    max-width: 100%;
+    padding: 18px;
+    background: rgba(245,245,245,0.86);
+    box-shadow: 0 10px 26px rgba(0,0,0,0.14);
+  }
+
+  .hero-title{
+    font-size: 28px;
+    line-height: 1.12;
+    margin-bottom: 10px;
+  }
+
+  .hero-subtitle{
+    font-size: 16px;
+    line-height: 1.35;
+    margin-bottom: 14px;
+  }
+
+  /* фичи в 1 колонку, чтобы не было "каши" */
+  .hero-features-2x2{
+    grid-template-columns: 1fr;
+    gap: 10px;
+  }
+
+  .feature-item{
+    padding: 14px;
+  }
+
+  .feature-item span{
+    font-size: 13px;
+    letter-spacing: 0.10em;
+  }
+
+  .cta-button{
+    width: 100%;
+  }
+}
+
+@media (max-width: 900px){
+  .problems-layout,
+  .about-layout,
+  .approach-layout,
+  .services-layout,
+  .why-layout,
+  .who-layout{
+    grid-template-columns: 1fr !important;
+  }
+
+  /* фото сверху */
+  .problems-media,
+  .about-media,
+  .approach-media,
+  .services-media,
+  .why-media,
+  .who-media{
+    order: -1;
+  }
+}
+
+@media (max-width: 900px){
+  .contact-form{
+    padding: 18px;
+  }
+
+  .form-group input,
+  .form-group textarea{
+    padding: 16px;
+    font-size: 16px; /* важно для iOS, чтобы не было авто-зума */
+    border-radius: 12px;
+  }
+}
+
+@media (max-width: 900px){
+  /* все медиа-блоки 50/50 */
+  .problems-media,
+  .about-media,
+  .approach-media,
+  .services-media,
+  .why-media,
+  .who-media{
+    background-size: contain !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-color: rgba(0,0,0,0.04);
+    min-height: 220px; /* можно 240, если хочешь больше */
+  }
+}
+
+/* =========================
+   MOBILE PREMIUM PACK
+   ========================= */
+
+/* 1) Reveal на мобилке: мягче и быстрее */
+@media (max-width: 900px){
+  .reveal{
+    transform: translateY(10px);
+    transition: opacity .45s ease, transform .45s ease;
+  }
+  .reveal-stagger > *{
+    transform: translateY(8px);
+    transition: opacity .45s ease, transform .45s ease;
+  }
+  .reveal-stagger.is-visible > *:nth-child(2){ transition-delay: 0.05s; }
+  .reveal-stagger.is-visible > *:nth-child(3){ transition-delay: 0.10s; }
+  .reveal-stagger.is-visible > *:nth-child(4){ transition-delay: 0.15s; }
+  .reveal-stagger.is-visible > *:nth-child(5){ transition-delay: 0.20s; }
+}
+
+/* 2) Шапка "glass" при скролле */
+.header{
+  transition: background .2s ease, backdrop-filter .2s ease, border-color .2s ease;
+}
+
+.header.is-scrolled{
+  background: rgba(245,245,245,0.55);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+/* 3) Sticky CTA снизу (только мобилка) */
+.sticky-cta{
+  display:none;
+}
+
+@media (max-width: 900px){
+  .sticky-cta{
+    display:flex;
+    position: fixed;
+    left: 16px;
+    right: 16px;
+    bottom: 14px;
+    z-index: 9999;
+
+    height: 52px;
+    align-items:center;
+    justify-content:center;
+    border-radius: 16px;
+
+    background: var(--red);
+    color: #fff;
+    text-decoration:none;
+
+    font-weight: 900;
+    letter-spacing: 0.10em;
+    text-transform: uppercase;
+    box-shadow: 0 16px 40px rgba(196,22,28,0.38);
+  }
+
+  /* чтобы нижняя кнопка не перекрывала контент */
+  body{
+    padding-bottom: 80px;
+  }
+}
+
+/* 4) Убираем iOS-глюки параллакса */
+@supports (-webkit-touch-callout: none){
+  .media-parallax{ background-attachment: scroll !important; }
+}
+
+/* 5) Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .sticky-cta{ transition:none !important; }
+  .header{ transition:none !important; }
+}
+
+/* =========================
+   +5% PREMIUM (HAPTIC + STRIP ANIM)
+   ========================= */
+
+/* 1) Haptic-like press */
+.cta-button,
+.sticky-cta,
+.nav-cta,
+.mobile-nav a{
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.cta-button:active,
+.sticky-cta:active,
+.nav-cta:active,
+.mobile-nav a:active{
+  transform: translateY(1px) scale(0.99);
+  filter: brightness(0.98);
+}
+
+/* лёгкая "пружина" при возврате */
+.cta-button,
+.sticky-cta,
+.nav-cta{
+  transition: transform .12s ease, filter .12s ease, box-shadow .12s ease;
+}
+
+/* 2) Micro animation for red left strip on tap/focus */
+.problem-item::before,
+.steps-vertical .step::before,
+.service-row::before,
+.why-item::before,
+.who-item::before{
+  transition: top .18s ease, bottom .18s ease, opacity .18s ease;
+  opacity: 0.92;
+}
+
+/* hover (десктоп) — у тебя уже есть, оставляем */
+.problem-item:hover::before,
+.steps-vertical .step:hover::before,
+.service-row:hover::before,
+.why-item:hover::before,
+.who-item:hover::before{
+  top: 10px;
+  bottom: 10px;
+}
+
+/* mobile tap/keyboard focus — выглядит "дорого" */
+.problem-item:active::before,
+.steps-vertical .step:active::before,
+.service-row:active::before,
+.why-item:active::before,
+.who-item:active::before,
+.problem-item:focus-within::before,
+.steps-vertical .step:focus-within::before,
+.service-row:focus-within::before,
+.why-item:focus-within::before,
+.who-item:focus-within::before{
+  top: 10px;
+  bottom: 10px;
+  opacity: 1;
+}
+
+/* 3) Slight active feedback on list cards (no jump) */
+.problem-item:active,
+.steps-vertical .step:active,
+.service-row:active,
+.why-item:active,
+.who-item:active{
+  box-shadow: 0 12px 28px rgba(0,0,0,0.10);
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce){
+  .cta-button:active,
+  .sticky-cta:active,
+  .nav-cta:active,
+  .mobile-nav a:active{
+    transform: none !important;
+    filter: none !important;
+  }
+}
+
+/* =========================
+   iOS PREMIUM OPTIMIZATIONS
+   ========================= */
+
+/* iOS: убрать тяжёлые фильтры/скейл с hero-фона */
+@supports (-webkit-touch-callout: none){
+  .hero::before{
+    filter: none !important;
+    transform: none !important;
+  }
+  /* читаемость добираем оверлеем */
+  .hero::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      rgba(255,255,255,0.10),
+      rgba(0,0,0,0.18)
+    ) !important;
+    pointer-events: none;
+  }
+}
+
+/* Подготовка к параллаксу: только transforms */
+.hero::before{ will-change: transform; }
+.hero-card{ will-change: transform; }
+
+.problems-media,
+.about-media,
+.approach-media,
+.services-media,
+.why-media,
+.who-media{
+  will-change: transform;
+  transform: translate3d(0,0,0);
+}
+
+/* Убираем blur в шапке на iPhone */
+@supports (-webkit-touch-callout: none){
+  .header.is-scrolled{
+    backdrop-filter: none !important;
+    background: rgba(245,245,245,0.78) !important;
+  }
+}
+
+/* iOS: ultra-smooth stagger for list items */
+@supports (-webkit-touch-callout: none){
+
+  /* базовый reveal для контейнеров */
+  .reveal{
+    transform: translate3d(0, 10px, 0);
+    transition: opacity .55s ease, transform .55s ease;
+  }
+
+  /* лесенка: элементы внутри */
+  .reveal-stagger > *{
+    opacity: 0;
+    transform: translate3d(0, 12px, 0);
+    transition: opacity .55s ease, transform .55s ease, filter .55s ease;
+    filter: blur(2px);
+    will-change: opacity, transform, filter;
+  }
+
+  .reveal-stagger.is-visible > *{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  /* мягкие задержки (до 8 элементов) */
+  .reveal-stagger.is-visible > *:nth-child(1){ transition-delay: 0.00s; }
+  .reveal-stagger.is-visible > *:nth-child(2){ transition-delay: 0.06s; }
+  .reveal-stagger.is-visible > *:nth-child(3){ transition-delay: 0.12s; }
+  .reveal-stagger.is-visible > *:nth-child(4){ transition-delay: 0.18s; }
+  .reveal-stagger.is-visible > *:nth-child(5){ transition-delay: 0.24s; }
+  .reveal-stagger.is-visible > *:nth-child(6){ transition-delay: 0.30s; }
+  .reveal-stagger.is-visible > *:nth-child(7){ transition-delay: 0.36s; }
+  .reveal-stagger.is-visible > *:nth-child(8){ transition-delay: 0.42s; }
+
+  /* если у пользователя включено "уменьшить движение" */
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-stagger > *{
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+      filter: none !important;
+    }
+  }
+}
+
+/* iOS: extra-soft stagger (premium) */
+@supports (-webkit-touch-callout: none){
+
+  .reveal{
+    transform: translate3d(0, 8px, 0);
+    transition: opacity .68s ease, transform .68s ease;
+  }
+
+  .reveal-stagger > *{
+    opacity: 0;
+    transform: translate3d(0, 9px, 0);
+    transition: opacity .68s ease, transform .68s ease, filter .68s ease;
+    filter: blur(1.2px);
+    will-change: opacity, transform, filter;
+  }
+
+  .reveal-stagger.is-visible > *{
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+    filter: blur(0);
+  }
+
+  /* чуть более "медленные" задержки */
+  .reveal-stagger.is-visible > *:nth-child(1){ transition-delay: 0.00s; }
+  .reveal-stagger.is-visible > *:nth-child(2){ transition-delay: 0.08s; }
+  .reveal-stagger.is-visible > *:nth-child(3){ transition-delay: 0.16s; }
+  .reveal-stagger.is-visible > *:nth-child(4){ transition-delay: 0.24s; }
+  .reveal-stagger.is-visible > *:nth-child(5){ transition-delay: 0.32s; }
+  .reveal-stagger.is-visible > *:nth-child(6){ transition-delay: 0.40s; }
+  .reveal-stagger.is-visible > *:nth-child(7){ transition-delay: 0.48s; }
+  .reveal-stagger.is-visible > *:nth-child(8){ transition-delay: 0.56s; }
+
+  @media (prefers-reduced-motion: reduce){
+    .reveal, .reveal-stagger > *{
+      transition: none !important;
+      transform: none !important;
+      opacity: 1 !important;
+      filter: none !important;
+    }
+  }
+}
+

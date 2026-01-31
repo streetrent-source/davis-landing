@@ -1,0 +1,49 @@
+name: Deploy to hosting (SFTP)
+
+on:
+  push:
+    branches: ["main"]
+
+concurrency:
+  group: deploy-main
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install lftp
+        run: sudo apt-get update && sudo apt-get install -y lftp
+
+      - name: Deploy via SFTP (lftp mirror)
+        env:
+          SFTP_HOST: ${{ secrets.SFTP_HOST }}
+          SFTP_PORT: ${{ secrets.SFTP_PORT }}
+          SFTP_USER: ${{ secrets.SFTP_USER }}
+          SFTP_PASS: ${{ secrets.SFTP_PASS }}
+          SFTP_PATH: ${{ secrets.SFTP_PATH }}
+        run: |
+          set -euo pipefail
+
+          if [ -z "${SFTP_PORT:-}" ]; then
+            SFTP_PORT="22"
+          fi
+
+          lftp -e "
+            set net:max-retries 2;
+            set net:timeout 20;
+            set sftp:auto-confirm yes;
+            set sftp:connect-program 'ssh -a -x -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null -p ${SFTP_PORT}';
+            open -u '${SFTP_USER}','${SFTP_PASS}' sftp://${SFTP_HOST}:${SFTP_PORT};
+            mkdir -p '${SFTP_PATH}';
+            mirror -R --delete --verbose \
+              --exclude-glob .git* \
+              --exclude-glob .github* \
+              --exclude-glob .DS_Store \
+              ./ '${SFTP_PATH}';
+            bye;
+          "
