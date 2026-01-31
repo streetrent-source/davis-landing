@@ -34,16 +34,17 @@ jobs:
           set -euo pipefail
 
 
-          if [ -z "${FTP_HOST:-}" ] || [ -z "${FTP_USER:-}" ] || [ -z "${FTP_PASS:-}" ] || [ -z "${FTP_PATH:-}" ]; then
-            echo "ERROR: Missing required secrets. Need: FTP_HOST, FTP_USER, FTP_PASS, FTP_PATH (FTP_PORT optional)."
+          if [ -z "${FTP_HOST:-}" ] || [ -z "${FTP_USER:-}" ] || [ -z "${FTP_PASS:-}" ]; then
+            echo "ERROR: Missing required secrets. Need: FTP_HOST, FTP_USER, FTP_PASS (FTP_PORT optional, FTP_PATH optional)."
             exit 2
           fi
 
 
           PORT="${FTP_PORT:-21}"
+          TARGET_DIR="${FTP_PATH:-/}"
 
 
-          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${FTP_PATH}"
+          echo "Deploy target: ftp://${FTP_HOST}:${PORT}${TARGET_DIR}"
 
 
           lftp -u "${FTP_USER}","${FTP_PASS}" -p "${PORT}" "${FTP_HOST}" <<EOF
@@ -55,12 +56,17 @@ jobs:
           set cmd:fail-exit yes
 
 
-          # upload from repo root to FTP_PATH
+          # debug: show where we are on FTP
+          cd "${TARGET_DIR}"
+          pwd
+          ls
+
+          # upload from repo root to TARGET_DIR
           mirror -R --delete --verbose \
             --exclude-glob .git* \
             --exclude-glob .github* \
             --exclude-glob README_DEPLOY.md \
-            ./ "${FTP_PATH}"
+            ./ .
 
 
           bye
