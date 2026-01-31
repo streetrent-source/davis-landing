@@ -84,7 +84,7 @@ jobs:
               pwd
               cls -1
               bye
-EOF
+          EOF
             )" || continue
 
             echo "$out"
@@ -140,4 +140,4 @@ EOF
             ./ .
 
           bye
-EOF
+          EOF
