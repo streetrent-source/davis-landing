@@ -46,7 +46,7 @@ body {
     content: "";
     position: absolute;
     inset: 0;
-    background-image: url("../img/hero-davis.png");
+    background-image: url("../img/hero-davis.png?v=20260201");
     background-size: cover;
     background-position: center;
     filter: brightness(1.35) contrast(0.92);
@@ -296,7 +296,7 @@ section{
   overflow: hidden;
   background: var(--card-bg);
   min-height: 420px; /* чтобы не было пустоты */
-  background-image: url("../img/moscow-map-search-bw.jpg.png");
+  background-image: url("../img/moscow-map-search-bw.jpg.png?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -392,7 +392,7 @@ section{
   overflow: hidden;
 
   /* ВАЖНО: фон вместо <img> */
-  background-image: url("../img/approach-meeting-bw-red.jpg");
+  background-image: url("../img/approach-meeting-bw-red.jpg?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -462,7 +462,7 @@ section{
   overflow: hidden;
   background: rgba(0,0,0,0.04);
   min-height: 420px;
-  background-image: url("../img/about-davis-team-bw-red.jpg");
+  background-image: url("../img/about-davis-team-bw-red.jpg?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -575,7 +575,7 @@ section{
   overflow: hidden;
   background: var(--card-bg);
   min-height: 420px; /* чтобы не было пустоты */
-  background-image: url("../img/services-meeting-bw-red.jpg");
+  background-image: url("../img/services-meeting-bw-red.jpg?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -736,7 +736,7 @@ section{
   overflow: hidden;
   background: rgba(0,0,0,0.04);
   min-height: 420px;
-  background-image: url("../img/who-street-retail-checklist-bw-red.jpg");
+  background-image: url("../img/who-street-retail-checklist-bw-red.jpg?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -1076,7 +1076,7 @@ section{
   overflow: hidden;
   background: rgba(0,0,0,0.04);
   min-height: 420px;
-  background-image: url("../img/why-davis-street-retail-bw-red.jpg");
+  background-image: url("../img/why-davis-street-retail-bw-red.jpg?v=20260201");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
