@@ -28,7 +28,8 @@ jobs:
           FTP_HOST: ${{ secrets.FTP_HOST || vars.FTP_HOST }}
           FTP_PORT: ${{ secrets.FTP_PORT || vars.FTP_PORT }}
           FTP_USER: ${{ secrets.FTP_USER || vars.FTP_USER }}
-          FTP_PASS: ${{ secrets.FTP_PASS }}
+          FTP_PASS: ${{ secrets.FTP_PASS || vars.FTP_PASS }}
+          FTP_PASS_FROM: ${{ secrets.FTP_PASS && 'secrets' || (vars.FTP_PASS && 'vars' || 'missing') }}
           FTP_PATH: ${{ secrets.FTP_PATH || vars.FTP_PATH }}
         run: |
           set -euo pipefail
@@ -38,12 +39,13 @@ jobs:
           [ -n "${FTP_HOST:-}" ] && echo " - FTP_HOST: SET" || echo " - FTP_HOST: MISSING"
           [ -n "${FTP_PORT:-}" ] && echo " - FTP_PORT: SET (optional)" || echo " - FTP_PORT: MISSING (optional, default 21)"
           [ -n "${FTP_USER:-}" ] && echo " - FTP_USER: SET" || echo " - FTP_USER: MISSING"
-          [ -n "${FTP_PASS:-}" ] && echo " - FTP_PASS: SET" || echo " - FTP_PASS: MISSING"
+          [ -n "${FTP_PASS:-}" ] && echo " - FTP_PASS: SET (from ${FTP_PASS_FROM})" || echo " - FTP_PASS: MISSING"
           [ -n "${FTP_PATH:-}" ] && echo " - FTP_PATH: SET (optional)" || echo " - FTP_PATH: MISSING (optional)"
 
           if [ -z "${FTP_HOST:-}" ] || [ -z "${FTP_USER:-}" ] || [ -z "${FTP_PASS:-}" ]; then
             echo "ERROR: Missing required credentials. Need FTP_HOST, FTP_USER, FTP_PASS."
-            echo "Tip: FTP_HOST/FTP_USER/FTP_PORT/FTP_PATH can be stored either in Actions Secrets or in Actions Variables. FTP_PASS must be a Secret."
+            echo "Tip: FTP_* can be stored either in Actions Secrets or in Actions Variables."
+            echo "Security note: prefer storing FTP_PASS as a Secret (not a Variable)."
             exit 2
           fi
 
