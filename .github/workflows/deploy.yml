@@ -35,6 +35,12 @@ jobs:
           set -euo pipefail
 
 
+          # Defaults for REG.RU ISPmanager (can be overridden by Secrets/Variables)
+          : "${FTP_HOST:=37.140.192.199}"
+          : "${FTP_USER:=u3372682}"
+          : "${FTP_PORT:=21}"
+          : "${FTP_PATH:=/www/davis.ru}"
+
           echo "Secrets/vars presence check (values are NOT printed):"
           [ -n "${FTP_HOST:-}" ] && echo " - FTP_HOST: SET" || echo " - FTP_HOST: MISSING"
           [ -n "${FTP_PORT:-}" ] && echo " - FTP_PORT: SET (optional)" || echo " - FTP_PORT: MISSING (optional, default 21)"
@@ -42,10 +48,9 @@ jobs:
           [ -n "${FTP_PASS:-}" ] && echo " - FTP_PASS: SET (from ${FTP_PASS_FROM})" || echo " - FTP_PASS: MISSING"
           [ -n "${FTP_PATH:-}" ] && echo " - FTP_PATH: SET (optional)" || echo " - FTP_PATH: MISSING (optional)"
 
-          if [ -z "${FTP_HOST:-}" ] || [ -z "${FTP_USER:-}" ] || [ -z "${FTP_PASS:-}" ]; then
-            echo "ERROR: Missing required credentials. Need FTP_HOST, FTP_USER, FTP_PASS."
-            echo "Tip: FTP_* can be stored either in Actions Secrets or in Actions Variables."
-            echo "Security note: prefer storing FTP_PASS as a Secret (not a Variable)."
+          if [ -z "${FTP_PASS:-}" ]; then
+            echo "ERROR: Missing required credential: FTP_PASS."
+            echo "Fix: Add Actions Secret 'FTP_PASS' (or Variable, but Secret is recommended)."
             exit 2
           fi
 
