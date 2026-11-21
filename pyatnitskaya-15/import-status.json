@@ -1,8 +1,7 @@
 {
-  "photos_original": 70,
-  "photos_edited": 2,
-  "documents_displayed": 8,
-  "floorplans": 4,
-  "local": true,
-  "verified": "2026-11-21"
+  "photos_saved": 0,
+  "photos_expected": 72,
+  "pdf_saved": 0,
+  "pdf_expected": 8,
+  "plan_images": 4
 }
