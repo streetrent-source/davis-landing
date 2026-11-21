@@ -1,331 +1,580 @@
 {
-  "source": "https://torgi.mos.ru/tender/20182722",
   "gallery": [
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/b9db362df6a1c202c1861e7dd28b8602.jpg",
-      "title": "Фотография объекта №1"
+      "url": "assets/photos/01.jpg",
+      "thumb": "assets/thumbs/01.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/8ed831bd50a6784b268742c4029ef55e.jpg",
-      "title": "Фотография объекта №2"
+      "url": "assets/photos/02.jpg",
+      "thumb": "assets/thumbs/02.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания-2",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/0b487bd5bcfae19062aac5864ae90e27.jpg",
-      "title": "Фотография объекта №3"
+      "url": "assets/photos/03.jpg",
+      "thumb": "assets/thumbs/03.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания-3",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/30110ce0428f7d8a0244031b6afd2e20.jpg",
-      "title": "Фотография объекта №4"
+      "url": "assets/photos/04.jpg",
+      "thumb": "assets/thumbs/04.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания-4",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/7418be3144dd2f1a862ef1528183e5a9.jpg",
-      "title": "Фотография объекта №5"
+      "url": "assets/photos/05.jpg",
+      "thumb": "assets/thumbs/05.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания-5",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/82d79a0c12b9034b99523c084abc058c.jpg",
-      "title": "Фотография объекта №6"
+      "url": "assets/photos/06.jpg",
+      "thumb": "assets/thumbs/06.webp",
+      "title": "ГП17005906. Здание. Общий фасад здания-6",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/51c180c432b4a9daa3183eb191f07361.jpg",
-      "title": "Фотография объекта №7"
+      "url": "assets/photos/07.jpg",
+      "thumb": "assets/thumbs/07.webp",
+      "title": "ГП17005906. Здание. Входная группа объекта",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/71c6df3edf3ef47540a0baa605493c0f.jpg",
-      "title": "Фотография объекта №8"
+      "url": "assets/photos/08.jpg",
+      "thumb": "assets/thumbs/08.webp",
+      "title": "ГП17005906. Здание. Входная группа объекта-2",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/29f9fb7b02114fe83829dac4fd17e1d1.jpg",
-      "title": "Фотография объекта №9"
+      "url": "assets/photos/09.jpg",
+      "thumb": "assets/thumbs/09.webp",
+      "title": "ГП17005906. Здание. Входная группа объекта-3",
+      "category": "exterior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/7841a607c583a9df73fcae2de1ea0575.jpg",
-      "title": "Фотография объекта №10"
+      "url": "assets/photos/10.jpg",
+      "thumb": "assets/thumbs/10.webp",
+      "title": "План здания · 1 этаж",
+      "category": "plans"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/593b6077f35db089e4437ce52e0abf6d.jpg",
-      "title": "Фотография объекта №11"
+      "url": "assets/photos/11.jpg",
+      "thumb": "assets/thumbs/11.webp",
+      "title": "План здания · 2 этаж",
+      "category": "plans"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/3c9d07e9a78a42559e4a007e2b955257.jpg",
-      "title": "Фотография объекта №12"
+      "url": "assets/photos/12.jpg",
+      "thumb": "assets/thumbs/12.webp",
+      "title": "План здания · Мезонин",
+      "category": "plans"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/4cac3a55c70f0be0ddf3d9a1aa7d7ca4.jpg",
-      "title": "Фотография объекта №13"
+      "url": "assets/photos/13.jpg",
+      "thumb": "assets/thumbs/13.webp",
+      "title": "План здания · Подвал",
+      "category": "plans"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/97daa389751e89229d21742383ab0f17.jpg",
-      "title": "Фотография объекта №14"
+      "url": "assets/photos/14.jpg",
+      "thumb": "assets/thumbs/14.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/392fa8952070a0fee0010d2def4111a8.jpg",
-      "title": "Фотография объекта №15"
+      "url": "assets/photos/15.jpg",
+      "thumb": "assets/thumbs/15.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-2",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/6e6216c7658ccf49a8563cc7c5f62458.jpg",
-      "title": "Фотография объекта №16"
+      "url": "assets/photos/16.jpg",
+      "thumb": "assets/thumbs/16.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-3",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/3c28de8ae355bbdd11fa85553e5ba758.jpg",
-      "title": "Фотография объекта №17"
+      "url": "assets/photos/17.jpg",
+      "thumb": "assets/thumbs/17.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-4",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/99e9a9ce802e98e65daecb62ebf15077.jpg",
-      "title": "Фотография объекта №18"
+      "url": "assets/photos/18.jpg",
+      "thumb": "assets/thumbs/18.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-5",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/bb675b7e41b140acfa8d700289b542a7.jpg",
-      "title": "Фотография объекта №19"
+      "url": "assets/photos/19.jpg",
+      "thumb": "assets/thumbs/19.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-6",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/3ee5098e2f9456e948745aee335fd571.jpg",
-      "title": "Фотография объекта №20"
+      "url": "assets/photos/20.jpg",
+      "thumb": "assets/thumbs/20.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-7",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/a48b2ef13134b220996cd980f947f6b3.jpg",
-      "title": "Фотография объекта №21"
+      "url": "assets/photos/21.jpg",
+      "thumb": "assets/thumbs/21.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-8",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/ebc8183fc02aa39f2f8418a15e7ee8a1.jpg",
-      "title": "Фотография объекта №22"
+      "url": "assets/photos/22.jpg",
+      "thumb": "assets/thumbs/22.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-9",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/6312a0a269d8eb157dabc5e0de630f29.jpg",
-      "title": "Фотография объекта №23"
+      "url": "assets/photos/23.jpg",
+      "thumb": "assets/thumbs/23.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-10",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/2161e60a75a73ab0f87e8d48b80b43d1.jpg",
-      "title": "Фотография объекта №24"
+      "url": "assets/photos/24.jpg",
+      "thumb": "assets/thumbs/24.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-11",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/d60e277261de8d5ca020ca5c3d620325.jpg",
-      "title": "Фотография объекта №25"
+      "url": "assets/photos/25.jpg",
+      "thumb": "assets/thumbs/25.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-12",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/97f6389771c154fa3afea85e2028833e.jpg",
-      "title": "Фотография объекта №26"
+      "url": "assets/photos/26.jpg",
+      "thumb": "assets/thumbs/26.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-13",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/5f2430a0325505c34572d2848ff6f0dd.jpg",
-      "title": "Фотография объекта №27"
+      "url": "assets/photos/27.jpg",
+      "thumb": "assets/thumbs/27.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-14",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/5dee86381bf08789b65f51d02c33e5e6.jpg",
-      "title": "Фотография объекта №28"
+      "url": "assets/photos/28.jpg",
+      "thumb": "assets/thumbs/28.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-15",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/f9ade4dcc232faefc842fc24aab16605.jpg",
-      "title": "Фотография объекта №29"
+      "url": "assets/photos/29.jpg",
+      "thumb": "assets/thumbs/29.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-16",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/212ab1615831fdd757f6a6a3b80fa622.jpg",
-      "title": "Фотография объекта №30"
+      "url": "assets/photos/30.jpg",
+      "thumb": "assets/thumbs/30.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-17",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/2055949c66fa393de3362b271d9f8163.jpg",
-      "title": "Фотография объекта №31"
+      "url": "assets/photos/31.jpg",
+      "thumb": "assets/thumbs/31.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-18",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/681c335ebf69f331ecd4b7d82df5a1a2.jpg",
-      "title": "Фотография объекта №32"
+      "url": "assets/photos/32.jpg",
+      "thumb": "assets/thumbs/32.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-19",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/0792b48483f2393e36ad5e255eff2b09.jpg",
-      "title": "Фотография объекта №33"
+      "url": "assets/photos/33.jpg",
+      "thumb": "assets/thumbs/33.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-20",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/f35657a63b74975ad93a6962f4589711.jpg",
-      "title": "Фотография объекта №34"
+      "url": "assets/photos/34.jpg",
+      "thumb": "assets/thumbs/34.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-21",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/835d0c9c4cb07c4aa0af3a19fdc36f1a.jpg",
-      "title": "Фотография объекта №35"
+      "url": "assets/photos/35.jpg",
+      "thumb": "assets/thumbs/35.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-22",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/0ccba89b87e63763d139b5dbe6603318.jpg",
-      "title": "Фотография объекта №36"
+      "url": "assets/photos/36.jpg",
+      "thumb": "assets/thumbs/36.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-23",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/19444b0f48af7c1fb53f38b68a5f36ef.jpg",
-      "title": "Фотография объекта №37"
+      "url": "assets/photos/37.jpg",
+      "thumb": "assets/thumbs/37.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-24",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/1115353a0b089fa97009ed29f082cd10.jpg",
-      "title": "Фотография объекта №38"
+      "url": "assets/photos/38.jpg",
+      "thumb": "assets/thumbs/38.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-25",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/7367dbb62655ca93a58af70a671a7454.jpg",
-      "title": "Фотография объекта №39"
+      "url": "assets/photos/39.jpg",
+      "thumb": "assets/thumbs/39.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-26",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/72d878e68d84857019b37a62b9241a3f.jpg",
-      "title": "Фотография объекта №40"
+      "url": "assets/photos/40.jpg",
+      "thumb": "assets/thumbs/40.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-27",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/c965a63a57821d18e736338880e24f70.jpg",
-      "title": "Фотография объекта №41"
+      "url": "assets/photos/41.jpg",
+      "thumb": "assets/thumbs/41.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-28",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/e96eebe3a0557f5ba644ebf1a52dee05.jpg",
-      "title": "Фотография объекта №42"
+      "url": "assets/photos/42.jpg",
+      "thumb": "assets/thumbs/42.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-29",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/9026f9e9aa87fde52e9cd0ad47b451e9.jpg",
-      "title": "Фотография объекта №43"
+      "url": "assets/photos/43.jpg",
+      "thumb": "assets/thumbs/43.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-30",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/efa2011096d560d99c11f960db67b50d.jpg",
-      "title": "Фотография объекта №44"
+      "url": "assets/photos/44.jpg",
+      "thumb": "assets/thumbs/44.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-31",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/71241418de0780f637351413308babec.jpg",
-      "title": "Фотография объекта №45"
+      "url": "assets/photos/45.jpg",
+      "thumb": "assets/thumbs/45.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-32",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/be3b03a2fc06911fbedd94de58de5d6b.jpg",
-      "title": "Фотография объекта №46"
+      "url": "assets/photos/46.jpg",
+      "thumb": "assets/thumbs/46.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-33",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/21e8eca89e4c263827b1e68b5eaddcb4.jpg",
-      "title": "Фотография объекта №47"
+      "url": "assets/photos/47.jpg",
+      "thumb": "assets/thumbs/47.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-34",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/f77a1b3de90aa60e56a81650787c884c.jpg",
-      "title": "Фотография объекта №48"
+      "url": "assets/photos/48.jpg",
+      "thumb": "assets/thumbs/48.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-35",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/5a08d0cab7535c4dde1fe7e0fe3bb30a.jpg",
-      "title": "Фотография объекта №49"
+      "url": "assets/photos/49.jpg",
+      "thumb": "assets/thumbs/49.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-36",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/02c434cc1c918624b92bde17d8cb9b76.jpg",
-      "title": "Фотография объекта №50"
+      "url": "assets/photos/50.jpg",
+      "thumb": "assets/thumbs/50.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-37",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/c80492b4b045aaef38e1356cdfecab6e.jpg",
-      "title": "Фотография объекта №51"
+      "url": "assets/photos/51.jpg",
+      "thumb": "assets/thumbs/51.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-38",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/43bafb172b94a135bc5ac3fc6d947c85.jpg",
-      "title": "Фотография объекта №52"
+      "url": "assets/photos/52.jpg",
+      "thumb": "assets/thumbs/52.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-39",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/1984fff8c3e7f762016840d7fc4fcee2.jpg",
-      "title": "Фотография объекта №53"
+      "url": "assets/photos/53.jpg",
+      "thumb": "assets/thumbs/53.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-40",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/086f777938605d851980c1fbe7150585.jpg",
-      "title": "Фотография объекта №54"
+      "url": "assets/photos/54.jpg",
+      "thumb": "assets/thumbs/54.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-41",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/a0610c1418830334da3da068db6f8ba2.jpg",
-      "title": "Фотография объекта №55"
+      "url": "assets/photos/55.jpg",
+      "thumb": "assets/thumbs/55.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-42",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/c0219cd3b20d9b406526e842afc065b2.jpg",
-      "title": "Фотография объекта №56"
+      "url": "assets/photos/56.jpg",
+      "thumb": "assets/thumbs/56.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-43",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/5c460663f20d24562a32a6ae61eaad68.jpg",
-      "title": "Фотография объекта №57"
+      "url": "assets/photos/57.jpg",
+      "thumb": "assets/thumbs/57.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-44",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/1bfc7b4c89ae8a0d0e19fb290eec6bc7.jpg",
-      "title": "Фотография объекта №58"
+      "url": "assets/photos/58.jpg",
+      "thumb": "assets/thumbs/58.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-45",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/74bc6566ab306f6db18d0f638283d07a.jpg",
-      "title": "Фотография объекта №59"
+      "url": "assets/photos/59.jpg",
+      "thumb": "assets/thumbs/59.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-46",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/ecda9ca5f42f6c485eb2787727b9f678.jpg",
-      "title": "Фотография объекта №60"
+      "url": "assets/photos/60.jpg",
+      "thumb": "assets/thumbs/60.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-47",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/62c6c27ac7d158dae2d960eb3e00e6ef.jpg",
-      "title": "Фотография объекта №61"
+      "url": "assets/photos/61.jpg",
+      "thumb": "assets/thumbs/61.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-48",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/f72d6fa32573ab950778f3a383d18f14.jpg",
-      "title": "Фотография объекта №62"
+      "url": "assets/photos/62.jpg",
+      "thumb": "assets/thumbs/62.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-49",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/a251b734f7b90c64dfc2c90b4c8b5885.jpg",
-      "title": "Фотография объекта №63"
+      "url": "assets/photos/63.jpg",
+      "thumb": "assets/thumbs/63.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-50",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/703598771351353da5964fea64b8490d.jpg",
-      "title": "Фотография объекта №64"
+      "url": "assets/photos/64.jpg",
+      "thumb": "assets/thumbs/64.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-51",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/b7a82e5e9bd88e245c3e0cc458e08aa1.jpg",
-      "title": "Фотография объекта №65"
+      "url": "assets/photos/65.jpg",
+      "thumb": "assets/thumbs/65.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-52",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/fdd9dcbed056fddd1f08e3fb350daf76.jpg",
-      "title": "Фотография объекта №66"
+      "url": "assets/photos/66.jpg",
+      "thumb": "assets/thumbs/66.webp",
+      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-53",
+      "category": "interior"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/a3505409bc4ac56cb1d5f7476297fc3f.jpg",
-      "title": "Фотография объекта №67"
+      "url": "assets/photos/67.jpg",
+      "thumb": "assets/thumbs/67.webp",
+      "title": "ГП17005906. Здание. Лестничные марши и площадки",
+      "category": "stairs"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/600c68a0f34386799e6ae9dfeaaedb7b.jpg",
-      "title": "Фотография объекта №68"
+      "url": "assets/photos/68.jpg",
+      "thumb": "assets/thumbs/68.webp",
+      "title": "ГП17005906. Здание. Лестничные марши и площадки-2",
+      "category": "stairs"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/f5b94a20c0bbcd6843de6e0ae8b82e8d.jpg",
-      "title": "Фотография объекта №69"
+      "url": "assets/photos/69.jpg",
+      "thumb": "assets/thumbs/69.webp",
+      "title": "ГП17005906. Здание. Подъездные пути",
+      "category": "surroundings"
     },
     {
-      "url": "https://torgi.mos.ru/objectimages/Tenders/20182722/2841490dcde73ce39f891932dc6fb813.jpg",
-      "title": "Фотография объекта №70"
+      "url": "assets/photos/70.jpg",
+      "thumb": "assets/thumbs/70.webp",
+      "title": "ГП17005906. Здание. Близлежащие дороги или автомагистрали с указанием их наименований",
+      "category": "surroundings"
     }
   ],
   "documents": [
     {
-      "title": "Поэтажный план БТИ",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539559",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Архив документации по объекту",
+      "url": "assets/documents/01.zip",
+      "bytes": 50427641,
+      "format": "ZIP"
     },
     {
-      "title": "Экспликация БТИ — список помещений",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539558",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Архив документации по торгам",
+      "url": "assets/documents/02.zip",
+      "bytes": 3272715,
+      "format": "ZIP"
     },
     {
-      "title": "Охранная документация",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539563",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Выписка ЕГРН для земельного участка",
+      "url": "assets/documents/04.pdf",
+      "bytes": 1431046,
+      "format": "PDF"
     },
     {
-      "title": "Выписка ЕГРН на земельный участок",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539564",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Выписка ЕГРН",
+      "url": "assets/documents/05.pdf",
+      "bytes": 2145768,
+      "format": "PDF"
     },
     {
-      "title": "Справка БТИ о состоянии здания",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539560",
-      "note": "Документ из карточки городских торгов — открыть"
-    },
-    {
-      "title": "Выписка из технического паспорта БТИ",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539565",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Выписка из технического паспорта БТИ на здание (строение)",
+      "url": "assets/documents/06.pdf",
+      "bytes": 351668,
+      "format": "PDF"
     },
     {
       "title": "Документы о наличии ограничений прав",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539562",
-      "note": "Документ из карточки городских торгов — открыть"
+      "url": "assets/documents/07.pdf",
+      "bytes": 4435303,
+      "format": "PDF"
     },
     {
-      "title": "Выписка ЕГРН на здание",
-      "url": "https://api.torgi.mos.ru/pptorgi/tender/v1/tender/getattachedfilebyid?attachmentId=6539561",
-      "note": "Документ из карточки городских торгов — открыть"
+      "title": "Дополнительный документ по объекту недвижимости",
+      "url": "assets/documents/08.pdf",
+      "bytes": 4540847,
+      "format": "PDF"
+    },
+    {
+      "title": "Отчет об оценке",
+      "url": "assets/documents/09.pdf",
+      "bytes": 19265137,
+      "format": "PDF"
+    },
+    {
+      "title": "Охранная документация",
+      "url": "assets/documents/10.pdf",
+      "bytes": 3639734,
+      "format": "PDF"
+    },
+    {
+      "title": "Поэтажный план БТИ",
+      "url": "assets/documents/11.zip",
+      "bytes": 421436,
+      "format": "ZIP"
+    },
+    {
+      "title": "Форма 5 БТИ_Справка БТИ о состоянии здания (строения)",
+      "url": "assets/documents/12.pdf",
+      "bytes": 342612,
+      "format": "PDF"
+    },
+    {
+      "title": "Фотографии объекта",
+      "url": "assets/documents/13.zip",
+      "bytes": 21533744,
+      "format": "ZIP"
+    },
+    {
+      "title": "Экспертное заключение СРО",
+      "url": "assets/documents/14.pdf",
+      "bytes": 806122,
+      "format": "PDF"
+    },
+    {
+      "title": "Экспликация БТИ_Список помещений объекта по БТИ (экспликация)",
+      "url": "assets/documents/15.pdf",
+      "bytes": 393984,
+      "format": "PDF"
+    },
+    {
+      "title": "Документ, подтверждающий внесение изменений",
+      "url": "assets/documents/17.pdf",
+      "bytes": 249719,
+      "format": "PDF"
+    },
+    {
+      "title": "Иное",
+      "url": "assets/documents/18.doc",
+      "bytes": 48128,
+      "format": "DOC"
+    },
+    {
+      "title": "Лотовая документация",
+      "url": "assets/documents/19.pdf",
+      "bytes": 442022,
+      "format": "PDF"
+    },
+    {
+      "title": "Лотовая документация_2",
+      "url": "assets/documents/20.pdf",
+      "bytes": 490469,
+      "format": "PDF"
+    },
+    {
+      "title": "Памятка победителя",
+      "url": "assets/documents/21.pdf",
+      "bytes": 574710,
+      "format": "PDF"
+    },
+    {
+      "title": "Проект договора",
+      "url": "assets/documents/22.pdf",
+      "bytes": 315986,
+      "format": "PDF"
+    },
+    {
+      "title": "Согласие собственника на заключение договора",
+      "url": "assets/documents/23.pdf",
+      "bytes": 1411538,
+      "format": "PDF"
+    },
+    {
+      "title": "Форма заявки на участие",
+      "url": "assets/documents/24.docx",
+      "bytes": 15541,
+      "format": "DOCX"
     }
   ],
-  "plans": [],
-  "tour": {
-    "embedUrl": null
-  }
+  "plans": [
+    {
+      "title": "Подвал",
+      "url": "assets/plans/level-0.png",
+      "pdf": "assets/plans/level-0.pdf"
+    },
+    {
+      "title": "1 этаж",
+      "url": "assets/plans/level-1.png",
+      "pdf": "assets/plans/level-1.pdf"
+    },
+    {
+      "title": "2 этаж",
+      "url": "assets/plans/level-2.png",
+      "pdf": "assets/plans/level-2.pdf"
+    },
+    {
+      "title": "Мезонин",
+      "url": "assets/plans/level-3.png",
+      "pdf": "assets/plans/level-3.pdf"
+    }
+  ]
 }
