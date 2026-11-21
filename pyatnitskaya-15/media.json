@@ -43,6 +43,13 @@
       "category": "territory"
     },
     {
+      "url": "assets/editorial/ovchinnikovsky-entrance.webp",
+      "thumb": "assets/editorial/ovchinnikovsky-entrance-thumb.webp",
+      "title": "Заезд с Большого Овчинниковского переулка",
+      "category": "exterior",
+      "edited": true
+    },
+    {
       "url": "assets/editorial/street-retouched.webp",
       "thumb": "assets/editorial/street-retouched-thumb.webp",
       "title": "Пятницкая улица и окружение · ретушь панорамы",
