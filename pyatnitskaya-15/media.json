@@ -490,22 +490,36 @@
     {
       "title": "Подвал",
       "url": "assets/plans/level-0.png",
-      "pdf": "assets/plans/level-0.pdf"
+      "pdf": "assets/plans/level-0.pdf",
+      "areaM2": 181.5,
+      "areaLabel": "181,5 м²",
+      "areaSource": "Экспликация БТИ от 01.12.2021"
     },
     {
       "title": "1 этаж",
       "url": "assets/plans/level-1.png",
-      "pdf": "assets/plans/level-1.pdf"
+      "pdf": "assets/plans/level-1.pdf",
+      "areaM2": 353.3,
+      "areaLabel": "353,3 м²",
+      "areaSource": "Экспликация БТИ от 01.12.2021"
     },
     {
       "title": "2 этаж",
       "url": "assets/plans/level-2.png",
-      "pdf": "assets/plans/level-2.pdf"
+      "pdf": "assets/plans/level-2.pdf",
+      "areaM2": 354.9,
+      "areaLabel": "354,9 м²",
+      "areaSource": "Экспликация БТИ от 01.12.2021"
     },
     {
       "title": "Мезонин",
       "url": "assets/plans/level-3.png",
-      "pdf": "assets/plans/level-3.pdf"
+      "pdf": "assets/plans/level-3.pdf",
+      "areaM2": 148.1,
+      "areaLabel": "148,1 м²",
+      "areaSource": "Экспликация БТИ от 01.12.2021",
+      "additionalAreaM2": 23.9,
+      "areaNote": "Также на этом плане: чердачные помещения — 23,9 м²."
     }
   ]
 }
