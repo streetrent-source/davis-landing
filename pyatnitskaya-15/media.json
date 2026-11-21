@@ -1,57 +1,77 @@
 {
   "gallery": [
     {
-      "url": "assets/photos/01.jpg",
-      "thumb": "assets/thumbs/01.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания",
-      "category": "exterior"
+      "url": "assets/photos/04.jpg",
+      "thumb": "assets/thumbs/04.webp",
+      "title": "Общий фасад здания-4",
+      "category": "territory"
     },
     {
-      "url": "assets/photos/02.jpg",
-      "thumb": "assets/thumbs/02.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания-2",
-      "category": "exterior"
+      "url": "assets/photos/01.jpg",
+      "thumb": "assets/thumbs/01.webp",
+      "title": "Общий фасад здания",
+      "category": "territory"
     },
     {
       "url": "assets/photos/03.jpg",
       "thumb": "assets/thumbs/03.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания-3",
-      "category": "exterior"
+      "title": "Общий фасад здания-3",
+      "category": "territory"
     },
     {
-      "url": "assets/photos/04.jpg",
-      "thumb": "assets/thumbs/04.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания-4",
-      "category": "exterior"
+      "url": "assets/photos/02.jpg",
+      "thumb": "assets/thumbs/02.webp",
+      "title": "Общий фасад здания-2",
+      "category": "territory"
     },
     {
       "url": "assets/photos/05.jpg",
       "thumb": "assets/thumbs/05.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания-5",
-      "category": "exterior"
+      "title": "Общий фасад здания-5",
+      "category": "territory"
     },
     {
       "url": "assets/photos/06.jpg",
       "thumb": "assets/thumbs/06.webp",
-      "title": "ГП17005906. Здание. Общий фасад здания-6",
-      "category": "exterior"
+      "title": "Общий фасад здания-6",
+      "category": "territory"
+    },
+    {
+      "url": "assets/photos/69.jpg",
+      "thumb": "assets/thumbs/69.webp",
+      "title": "Подъездные пути",
+      "category": "territory"
+    },
+    {
+      "url": "assets/editorial/street-retouched.webp",
+      "thumb": "assets/editorial/street-retouched-thumb.webp",
+      "title": "Пятницкая улица и окружение · ретушь панорамы",
+      "category": "surroundings",
+      "edited": true
+    },
+    {
+      "url": "assets/editorial/facade-retouched.webp",
+      "thumb": "assets/editorial/facade-retouched-thumb.webp",
+      "title": "Фасад с Пятницкой улицы · ретушь",
+      "category": "exterior",
+      "edited": true
     },
     {
       "url": "assets/photos/07.jpg",
       "thumb": "assets/thumbs/07.webp",
-      "title": "ГП17005906. Здание. Входная группа объекта",
+      "title": "Входная группа объекта",
       "category": "exterior"
     },
     {
       "url": "assets/photos/08.jpg",
       "thumb": "assets/thumbs/08.webp",
-      "title": "ГП17005906. Здание. Входная группа объекта-2",
+      "title": "Входная группа объекта-2",
       "category": "exterior"
     },
     {
       "url": "assets/photos/09.jpg",
       "thumb": "assets/thumbs/09.webp",
-      "title": "ГП17005906. Здание. Входная группа объекта-3",
+      "title": "Входная группа объекта-3",
       "category": "exterior"
     },
     {
@@ -81,478 +101,396 @@
     {
       "url": "assets/photos/14.jpg",
       "thumb": "assets/thumbs/14.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта",
+      "title": "Помещения, входящие в состав реализуемого объекта",
       "category": "interior"
     },
     {
       "url": "assets/photos/15.jpg",
       "thumb": "assets/thumbs/15.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-2",
+      "title": "Помещения, входящие в состав реализуемого объекта-2",
       "category": "interior"
     },
     {
       "url": "assets/photos/16.jpg",
       "thumb": "assets/thumbs/16.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-3",
+      "title": "Помещения, входящие в состав реализуемого объекта-3",
       "category": "interior"
     },
     {
       "url": "assets/photos/17.jpg",
       "thumb": "assets/thumbs/17.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-4",
+      "title": "Помещения, входящие в состав реализуемого объекта-4",
       "category": "interior"
     },
     {
       "url": "assets/photos/18.jpg",
       "thumb": "assets/thumbs/18.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-5",
+      "title": "Помещения, входящие в состав реализуемого объекта-5",
       "category": "interior"
     },
     {
       "url": "assets/photos/19.jpg",
       "thumb": "assets/thumbs/19.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-6",
+      "title": "Помещения, входящие в состав реализуемого объекта-6",
       "category": "interior"
     },
     {
       "url": "assets/photos/20.jpg",
       "thumb": "assets/thumbs/20.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-7",
+      "title": "Помещения, входящие в состав реализуемого объекта-7",
       "category": "interior"
     },
     {
       "url": "assets/photos/21.jpg",
       "thumb": "assets/thumbs/21.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-8",
+      "title": "Помещения, входящие в состав реализуемого объекта-8",
       "category": "interior"
     },
     {
       "url": "assets/photos/22.jpg",
       "thumb": "assets/thumbs/22.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-9",
+      "title": "Помещения, входящие в состав реализуемого объекта-9",
       "category": "interior"
     },
     {
       "url": "assets/photos/23.jpg",
       "thumb": "assets/thumbs/23.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-10",
+      "title": "Помещения, входящие в состав реализуемого объекта-10",
       "category": "interior"
     },
     {
       "url": "assets/photos/24.jpg",
       "thumb": "assets/thumbs/24.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-11",
+      "title": "Помещения, входящие в состав реализуемого объекта-11",
       "category": "interior"
     },
     {
       "url": "assets/photos/25.jpg",
       "thumb": "assets/thumbs/25.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-12",
+      "title": "Помещения, входящие в состав реализуемого объекта-12",
       "category": "interior"
     },
     {
       "url": "assets/photos/26.jpg",
       "thumb": "assets/thumbs/26.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-13",
+      "title": "Помещения, входящие в состав реализуемого объекта-13",
       "category": "interior"
     },
     {
       "url": "assets/photos/27.jpg",
       "thumb": "assets/thumbs/27.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-14",
+      "title": "Помещения, входящие в состав реализуемого объекта-14",
       "category": "interior"
     },
     {
       "url": "assets/photos/28.jpg",
       "thumb": "assets/thumbs/28.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-15",
+      "title": "Помещения, входящие в состав реализуемого объекта-15",
       "category": "interior"
     },
     {
       "url": "assets/photos/29.jpg",
       "thumb": "assets/thumbs/29.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-16",
+      "title": "Помещения, входящие в состав реализуемого объекта-16",
       "category": "interior"
     },
     {
       "url": "assets/photos/30.jpg",
       "thumb": "assets/thumbs/30.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-17",
+      "title": "Помещения, входящие в состав реализуемого объекта-17",
       "category": "interior"
     },
     {
       "url": "assets/photos/31.jpg",
       "thumb": "assets/thumbs/31.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-18",
+      "title": "Помещения, входящие в состав реализуемого объекта-18",
       "category": "interior"
     },
     {
       "url": "assets/photos/32.jpg",
       "thumb": "assets/thumbs/32.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-19",
+      "title": "Помещения, входящие в состав реализуемого объекта-19",
       "category": "interior"
     },
     {
       "url": "assets/photos/33.jpg",
       "thumb": "assets/thumbs/33.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-20",
+      "title": "Помещения, входящие в состав реализуемого объекта-20",
       "category": "interior"
     },
     {
       "url": "assets/photos/34.jpg",
       "thumb": "assets/thumbs/34.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-21",
+      "title": "Помещения, входящие в состав реализуемого объекта-21",
       "category": "interior"
     },
     {
       "url": "assets/photos/35.jpg",
       "thumb": "assets/thumbs/35.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-22",
+      "title": "Помещения, входящие в состав реализуемого объекта-22",
       "category": "interior"
     },
     {
       "url": "assets/photos/36.jpg",
       "thumb": "assets/thumbs/36.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-23",
+      "title": "Помещения, входящие в состав реализуемого объекта-23",
       "category": "interior"
     },
     {
       "url": "assets/photos/37.jpg",
       "thumb": "assets/thumbs/37.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-24",
+      "title": "Помещения, входящие в состав реализуемого объекта-24",
       "category": "interior"
     },
     {
       "url": "assets/photos/38.jpg",
       "thumb": "assets/thumbs/38.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-25",
+      "title": "Помещения, входящие в состав реализуемого объекта-25",
       "category": "interior"
     },
     {
       "url": "assets/photos/39.jpg",
       "thumb": "assets/thumbs/39.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-26",
+      "title": "Помещения, входящие в состав реализуемого объекта-26",
       "category": "interior"
     },
     {
       "url": "assets/photos/40.jpg",
       "thumb": "assets/thumbs/40.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-27",
+      "title": "Помещения, входящие в состав реализуемого объекта-27",
       "category": "interior"
     },
     {
       "url": "assets/photos/41.jpg",
       "thumb": "assets/thumbs/41.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-28",
+      "title": "Помещения, входящие в состав реализуемого объекта-28",
       "category": "interior"
     },
     {
       "url": "assets/photos/42.jpg",
       "thumb": "assets/thumbs/42.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-29",
+      "title": "Помещения, входящие в состав реализуемого объекта-29",
       "category": "interior"
     },
     {
       "url": "assets/photos/43.jpg",
       "thumb": "assets/thumbs/43.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-30",
+      "title": "Помещения, входящие в состав реализуемого объекта-30",
       "category": "interior"
     },
     {
       "url": "assets/photos/44.jpg",
       "thumb": "assets/thumbs/44.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-31",
+      "title": "Помещения, входящие в состав реализуемого объекта-31",
       "category": "interior"
     },
     {
       "url": "assets/photos/45.jpg",
       "thumb": "assets/thumbs/45.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-32",
+      "title": "Помещения, входящие в состав реализуемого объекта-32",
       "category": "interior"
     },
     {
       "url": "assets/photos/46.jpg",
       "thumb": "assets/thumbs/46.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-33",
+      "title": "Помещения, входящие в состав реализуемого объекта-33",
       "category": "interior"
     },
     {
       "url": "assets/photos/47.jpg",
       "thumb": "assets/thumbs/47.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-34",
+      "title": "Помещения, входящие в состав реализуемого объекта-34",
       "category": "interior"
     },
     {
       "url": "assets/photos/48.jpg",
       "thumb": "assets/thumbs/48.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-35",
+      "title": "Помещения, входящие в состав реализуемого объекта-35",
       "category": "interior"
     },
     {
       "url": "assets/photos/49.jpg",
       "thumb": "assets/thumbs/49.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-36",
+      "title": "Помещения, входящие в состав реализуемого объекта-36",
       "category": "interior"
     },
     {
       "url": "assets/photos/50.jpg",
       "thumb": "assets/thumbs/50.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-37",
+      "title": "Помещения, входящие в состав реализуемого объекта-37",
       "category": "interior"
     },
     {
       "url": "assets/photos/51.jpg",
       "thumb": "assets/thumbs/51.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-38",
+      "title": "Помещения, входящие в состав реализуемого объекта-38",
       "category": "interior"
     },
     {
       "url": "assets/photos/52.jpg",
       "thumb": "assets/thumbs/52.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-39",
+      "title": "Помещения, входящие в состав реализуемого объекта-39",
       "category": "interior"
     },
     {
       "url": "assets/photos/53.jpg",
       "thumb": "assets/thumbs/53.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-40",
+      "title": "Помещения, входящие в состав реализуемого объекта-40",
       "category": "interior"
     },
     {
       "url": "assets/photos/54.jpg",
       "thumb": "assets/thumbs/54.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-41",
+      "title": "Помещения, входящие в состав реализуемого объекта-41",
       "category": "interior"
     },
     {
       "url": "assets/photos/55.jpg",
       "thumb": "assets/thumbs/55.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-42",
+      "title": "Помещения, входящие в состав реализуемого объекта-42",
       "category": "interior"
     },
     {
       "url": "assets/photos/56.jpg",
       "thumb": "assets/thumbs/56.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-43",
+      "title": "Помещения, входящие в состав реализуемого объекта-43",
       "category": "interior"
     },
     {
       "url": "assets/photos/57.jpg",
       "thumb": "assets/thumbs/57.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-44",
+      "title": "Помещения, входящие в состав реализуемого объекта-44",
       "category": "interior"
     },
     {
       "url": "assets/photos/58.jpg",
       "thumb": "assets/thumbs/58.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-45",
+      "title": "Помещения, входящие в состав реализуемого объекта-45",
       "category": "interior"
     },
     {
       "url": "assets/photos/59.jpg",
       "thumb": "assets/thumbs/59.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-46",
+      "title": "Помещения, входящие в состав реализуемого объекта-46",
       "category": "interior"
     },
     {
       "url": "assets/photos/60.jpg",
       "thumb": "assets/thumbs/60.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-47",
+      "title": "Помещения, входящие в состав реализуемого объекта-47",
       "category": "interior"
     },
     {
       "url": "assets/photos/61.jpg",
       "thumb": "assets/thumbs/61.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-48",
+      "title": "Помещения, входящие в состав реализуемого объекта-48",
       "category": "interior"
     },
     {
       "url": "assets/photos/62.jpg",
       "thumb": "assets/thumbs/62.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-49",
+      "title": "Помещения, входящие в состав реализуемого объекта-49",
       "category": "interior"
     },
     {
       "url": "assets/photos/63.jpg",
       "thumb": "assets/thumbs/63.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-50",
+      "title": "Помещения, входящие в состав реализуемого объекта-50",
       "category": "interior"
     },
     {
       "url": "assets/photos/64.jpg",
       "thumb": "assets/thumbs/64.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-51",
+      "title": "Помещения, входящие в состав реализуемого объекта-51",
       "category": "interior"
     },
     {
       "url": "assets/photos/65.jpg",
       "thumb": "assets/thumbs/65.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-52",
+      "title": "Помещения, входящие в состав реализуемого объекта-52",
       "category": "interior"
     },
     {
       "url": "assets/photos/66.jpg",
       "thumb": "assets/thumbs/66.webp",
-      "title": "ГП17005906. Здание. Помещения, входящие в состав реализуемого объекта-53",
+      "title": "Помещения, входящие в состав реализуемого объекта-53",
       "category": "interior"
     },
     {
       "url": "assets/photos/67.jpg",
       "thumb": "assets/thumbs/67.webp",
-      "title": "ГП17005906. Здание. Лестничные марши и площадки",
+      "title": "Лестничные марши и площадки",
       "category": "stairs"
     },
     {
       "url": "assets/photos/68.jpg",
       "thumb": "assets/thumbs/68.webp",
-      "title": "ГП17005906. Здание. Лестничные марши и площадки-2",
+      "title": "Лестничные марши и площадки-2",
       "category": "stairs"
-    },
-    {
-      "url": "assets/photos/69.jpg",
-      "thumb": "assets/thumbs/69.webp",
-      "title": "ГП17005906. Здание. Подъездные пути",
-      "category": "surroundings"
     },
     {
       "url": "assets/photos/70.jpg",
       "thumb": "assets/thumbs/70.webp",
-      "title": "ГП17005906. Здание. Близлежащие дороги или автомагистрали с указанием их наименований",
+      "title": "Близлежащие дороги или автомагистрали с указанием их наименований",
       "category": "surroundings"
     }
   ],
   "documents": [
     {
-      "title": "Архив документации по объекту",
-      "url": "assets/documents/01.zip",
-      "bytes": 50427641,
-      "format": "ZIP"
-    },
-    {
-      "title": "Архив документации по торгам",
-      "url": "assets/documents/02.zip",
-      "bytes": 3272715,
-      "format": "ZIP"
-    },
-    {
-      "title": "Выписка ЕГРН для земельного участка",
+      "title": "Земельный участок · выписка ЕГРН",
       "url": "assets/documents/04.pdf",
       "bytes": 1431046,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "Земельный участок"
     },
     {
-      "title": "Выписка ЕГРН",
-      "url": "assets/documents/05.pdf",
-      "bytes": 2145768,
-      "format": "PDF"
-    },
-    {
-      "title": "Выписка из технического паспорта БТИ на здание (строение)",
+      "title": "Технический паспорт БТИ",
       "url": "assets/documents/06.pdf",
       "bytes": 351668,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "БТИ"
     },
     {
-      "title": "Документы о наличии ограничений прав",
+      "title": "Охранные обязательства и условия сохранения",
       "url": "assets/documents/07.pdf",
       "bytes": 4435303,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "Охранный статус"
     },
     {
-      "title": "Дополнительный документ по объекту недвижимости",
+      "title": "Акт приёмки работ по сохранению памятника",
       "url": "assets/documents/08.pdf",
       "bytes": 4540847,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "Охранный статус"
     },
     {
-      "title": "Отчет об оценке",
-      "url": "assets/documents/09.pdf",
-      "bytes": 19265137,
-      "format": "PDF"
-    },
-    {
-      "title": "Охранная документация",
+      "title": "Охранная документация памятника",
       "url": "assets/documents/10.pdf",
       "bytes": 3639734,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "Охранный статус"
     },
     {
-      "title": "Поэтажный план БТИ",
+      "title": "Поэтажные планы БТИ · полный архив",
       "url": "assets/documents/11.zip",
       "bytes": 421436,
-      "format": "ZIP"
+      "format": "ZIP",
+      "section": "БТИ"
     },
     {
-      "title": "Форма 5 БТИ_Справка БТИ о состоянии здания (строения)",
+      "title": "Справка БТИ о состоянии здания · форма 5",
       "url": "assets/documents/12.pdf",
       "bytes": 342612,
-      "format": "PDF"
+      "format": "PDF",
+      "section": "БТИ"
     },
     {
-      "title": "Фотографии объекта",
-      "url": "assets/documents/13.zip",
-      "bytes": 21533744,
-      "format": "ZIP"
-    },
-    {
-      "title": "Экспертное заключение СРО",
-      "url": "assets/documents/14.pdf",
-      "bytes": 806122,
-      "format": "PDF"
-    },
-    {
-      "title": "Экспликация БТИ_Список помещений объекта по БТИ (экспликация)",
+      "title": "Экспликация БТИ · состав помещений",
       "url": "assets/documents/15.pdf",
       "bytes": 393984,
-      "format": "PDF"
-    },
-    {
-      "title": "Документ, подтверждающий внесение изменений",
-      "url": "assets/documents/17.pdf",
-      "bytes": 249719,
-      "format": "PDF"
-    },
-    {
-      "title": "Иное",
-      "url": "assets/documents/18.doc",
-      "bytes": 48128,
-      "format": "DOC"
-    },
-    {
-      "title": "Лотовая документация",
-      "url": "assets/documents/19.pdf",
-      "bytes": 442022,
-      "format": "PDF"
-    },
-    {
-      "title": "Лотовая документация_2",
-      "url": "assets/documents/20.pdf",
-      "bytes": 490469,
-      "format": "PDF"
-    },
-    {
-      "title": "Памятка победителя",
-      "url": "assets/documents/21.pdf",
-      "bytes": 574710,
-      "format": "PDF"
-    },
-    {
-      "title": "Проект договора",
-      "url": "assets/documents/22.pdf",
-      "bytes": 315986,
-      "format": "PDF"
-    },
-    {
-      "title": "Согласие собственника на заключение договора",
-      "url": "assets/documents/23.pdf",
-      "bytes": 1411538,
-      "format": "PDF"
-    },
-    {
-      "title": "Форма заявки на участие",
-      "url": "assets/documents/24.docx",
-      "bytes": 15541,
-      "format": "DOCX"
+      "format": "PDF",
+      "section": "БТИ"
     }
   ],
   "plans": [

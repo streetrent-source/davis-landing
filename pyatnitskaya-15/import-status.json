@@ -1,7 +1,8 @@
 {
-  "photos": 70,
-  "documents": 22,
-  "plans": 4,
+  "photos_original": 70,
+  "photos_edited": 2,
+  "documents_displayed": 8,
+  "floorplans": 4,
   "local": true,
   "verified": "2026-11-21"
 }
