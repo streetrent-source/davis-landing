@@ -1,7 +1,8 @@
 {
-  "photos_saved": 0,
+  "photos_saved": 72,
   "photos_expected": 72,
-  "pdf_saved": 0,
-  "pdf_expected": 8,
-  "plan_images": 4
+  "documents_local": 8,
+  "plan_images": 4,
+  "original_photos_preserved": 70,
+  "verified": "2026-11-21"
 }
