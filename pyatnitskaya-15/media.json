@@ -437,13 +437,6 @@
   ],
   "documents": [
     {
-      "title": "Земельный участок · выписка ЕГРН",
-      "url": "assets/documents/04.pdf",
-      "bytes": 1431046,
-      "format": "PDF",
-      "section": "Земельный участок"
-    },
-    {
       "title": "Технический паспорт БТИ",
       "url": "assets/documents/06.pdf",
       "bytes": 351668,
@@ -454,13 +447,6 @@
       "title": "Охранные обязательства и условия сохранения",
       "url": "assets/documents/07.pdf",
       "bytes": 4435303,
-      "format": "PDF",
-      "section": "Охранный статус"
-    },
-    {
-      "title": "Акт приёмки работ по сохранению памятника",
-      "url": "assets/documents/08.pdf",
-      "bytes": 4540847,
       "format": "PDF",
       "section": "Охранный статус"
     },
