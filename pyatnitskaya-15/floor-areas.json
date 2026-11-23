@@ -1,0 +1,46 @@
+{
+  "source": "assets/documents/15.pdf",
+  "document_date": "01.12.2021",
+  "includes_staircases": true,
+  "floors": {
+    "Подвал": {
+      "area_m2": "181.5",
+      "sum_components": [
+        "115.9",
+        "55.4",
+        "10.2"
+      ]
+    },
+    "1 этаж": {
+      "area_m2": "353.3",
+      "sum_components": [
+        "151.7",
+        "151.5",
+        "16.5",
+        "33.6"
+      ]
+    },
+    "2 этаж": {
+      "area_m2": "354.9",
+      "sum_components": [
+        "243.6",
+        "48.7",
+        "28.7",
+        "33.9"
+      ]
+    },
+    "Мезонин": {
+      "area_m2": "148.1",
+      "sum_components": [
+        "147.4",
+        "13.9",
+        "10.7",
+        "-16.0",
+        "-7.9"
+      ]
+    }
+  },
+  "attic_separate_m2": "23.9",
+  "bti_total_m2": "1061.7",
+  "advertised_building_area_m2": "1030.1"
+}

@@ -1,0 +1,35 @@
+name: Import Pyatnitskaya 15 assets to standalone site
+on:
+  push:
+    branches: [feature/pyatnitskaya-15]
+    paths:
+      - ".github/workflows/import-pyatnitskaya.yml"
+      - "pyatnitskaya-15/media.json"
+      - "import-pyatnitskaya.py"
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  import-assets:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Install PDF rendering tools
+        run: sudo apt-get update -qq && sudo apt-get install -y poppler-utils
+      - name: Import photos and published PDFs
+        run: python3 import-pyatnitskaya.py
+      - name: Commit verified locally stored assets and site manifest
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pyatnitskaya-15
+          if git diff --cached --quiet; then
+            echo "No new downloaded files"
+          else
+            git commit -m "Archive verified photo and document files for independent microsite"
+            git push
+          fi
